@@ -1,14 +1,15 @@
+name: Build React App
+
 on:
   push:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -17,10 +18,7 @@ jobs:
           node-version: '20.10'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build the React app
+      - name: Build React app
         run: npm run build
-
-      - name: Trigger deployment webhook
-        run: curl -X POST ${{ secrets.WEBHOOK_URL }}
