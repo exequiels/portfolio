@@ -22,3 +22,6 @@ jobs:
 
       - name: Build React app
         run: npm run build
+
+      - name: Trigger deployment webhook
+        run: curl -X POST ${{ secrets.WEBHOOK_URL }}
