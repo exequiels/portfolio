@@ -3,7 +3,7 @@ name: Clone Source Files
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   clone-source-files:
