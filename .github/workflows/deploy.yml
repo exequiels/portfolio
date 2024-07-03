@@ -19,10 +19,10 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git clone https://github-actions:${{ secrets.PORTFOLIO_DEPLOY }}@github.com/exequiels/portfolio-deploy.git
-          rm -rf portfolio-deploy/*
-          cp -r * portfolio-deploy/
-          cd portfolio-deploy
+          git clone https://github-actions:${{ secrets.PORTFOLIO_DEPLOY }}@github.com/exequiels/portfolio-deploy.git temp-portfolio-deploy
+          rm -rf temp-portfolio-deploy/*
+          cp -r * temp-portfolio-deploy/
+          cd temp-portfolio-deploy
           git add .
           git commit -m "Update source files"
           git push origin main
