@@ -35,4 +35,4 @@ jobs:
         cd portfolio-deploy
         git add .
         git commit -m "Update built files"
-        git push origin master
+        git push origin main
