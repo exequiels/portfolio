@@ -23,13 +23,13 @@ jobs:
     - name: Build application
       run: npm run build
 
-    - name: Push dist folder to portfolio-deploy repository
+    - name: Deploy built files
       env:
         PORTFOLIO_DEPLOY: ${{ secrets.PORTFOLIO_DEPLOY }}
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git clone https://github.com/exequiels/portfolio-deploy.git
+        git clone https://github-actions:${{ secrets.PORTFOLIO_DEPLOY }}@github.com/exequiels/portfolio-deploy.git
         rm -rf portfolio-deploy/*
         cp -r dist/* portfolio-deploy/
         cd portfolio-deploy
