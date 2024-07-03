@@ -17,12 +17,13 @@ jobs:
         env:
           PORTFOLIO_DEPLOY: ${{ secrets.PORTFOLIO_DEPLOY }}
         run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git clone https://github-actions:${{ secrets.PORTFOLIO_DEPLOY }}@github.com/exequiels/portfolio-deploy.git portfolio-deploy-repo
-            rm -rf portfolio-deploy-repo/*
-            cp -r * portfolio-deploy-repo/
-            cd portfolio-deploy-repo
-            git add .
-            git commit -m "Update source files"
-            git push origin main
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git clone https://github-actions:${{ secrets.PORTFOLIO_DEPLOY }}@github.com/exequiels/portfolio-deploy.git portfolio-deploy-repo
+          rm -rf portfolio-deploy-repo/*
+          shopt -s extglob
+          cp -r !(portfolio-deploy-repo) portfolio-deploy-repo/
+          cd portfolio-deploy-repo
+          git add .
+          git commit -m "Update source files"
+          git push origin main
