@@ -1,4 +1,3 @@
-import React from "react";
 import FullScreen from "./Fullscreen";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";

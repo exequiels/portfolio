@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <div
@@ -20,13 +18,13 @@ const Header = () => {
         <li className="flex">
           <a
             href=""
-            className="mr-4 text-white hover:text-primary-500 font-bold no-underline"
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline"
           >
             Estudios
           </a>
           <a
             href=""
-            className="mr-4 text-white hover:text-primary-500 font-bold no-underline"
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline"
           >
             Proyectos
           </a>
