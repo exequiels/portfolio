@@ -1,3 +1,5 @@
+import FullScreenDemo from "./Menu";
+
 const Header = () => {
   return (
     <div
@@ -6,7 +8,7 @@ const Header = () => {
         fontWeight: "medium",
       }}
     >
-      <ul className="list-none flex justify-content-between items-center font-medium mb-3">
+      <ul className="list-none flex align-items-center justify-content-between items-center font-medium mb-3">
         <li>
           <a
             href="https://sabatie.com.ar/"
@@ -16,17 +18,35 @@ const Header = () => {
           </a>
         </li>
         <li className="flex">
+          <div className="md:hidden ml-4">
+            <FullScreenDemo />
+          </div>
           <a
             href=""
-            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline"
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline hidden md:block"
           >
-            Estudios
+            Educación
           </a>
+
           <a
             href=""
-            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline"
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline hidden md:block"
           >
             Proyectos
+          </a>
+
+          <a
+            href=""
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline hidden md:block"
+          >
+            Testimonios
+          </a>
+
+          <a
+            href=""
+            className="mr-4 text-gray-500 hover:text-primary-500 font-bold no-underline hidden md:block"
+          >
+            Contacto
           </a>
         </li>
       </ul>

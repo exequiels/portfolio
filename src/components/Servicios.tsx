@@ -1,11 +1,11 @@
 import FullScreen from "./Fullscreen";
 
-const Projects = () => {
+const Servicios = () => {
   return (
     <FullScreen justifyContent="center" alignItems="center" isDarkBackground>
-      <div>Proyectos</div>
+      <div>Servicios</div>
     </FullScreen>
   );
 };
 
-export default Projects;
+export default Servicios;

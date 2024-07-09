@@ -9,8 +9,8 @@ const Landing = () => {
       isDarkBackground
       backgroundColor="#FFFFFF"
     >
-      <div className="grid grid-nogutter surface-0 text-800">
-        <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+      <div className="grid grid-nogutter surface-0 text-800 md:mt-3">
+        <div className="col-12 md:col-6 p-4 md:p-6 text-center md:text-left flex align-items-center">
           <section>
             <p className="text-2xl mt-0 mb-2 text-700 line-height-3">
               Hola, soy
@@ -38,14 +38,15 @@ const Landing = () => {
             />
           </section>
         </div>
-        <div className="col-12 md:col-6 overflow-hidden">
+        <div className="col-12 md:col-6 flex justify-content-center sm:mt-2">
           <img
             src="./images/exequiel.jpg"
             alt="hero-1"
-            className="md:ml-auto block md:h-full p-mx-auto p-my-2"
+            className="md:ml-auto block md:h-full p-mx-auto p-my-2 img-responsive"
             style={{
-              clipPath: "polygon(8% 0, 100% 0%, 100% 100%, 0 100%)",
-              width: "500px",
+              // clipPath: "polygon(8% 0, 100% 0%, 100% 100%, 0 100%)",
+              width: "100%",
+              maxWidth: "400px",
               height: "auto",
             }}
           />
