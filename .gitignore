@@ -13,6 +13,7 @@ dist-ssr
 *.local
 github
 deploy.yml
+transform.js
 
 # Editor directories and files
 .vscode/*
