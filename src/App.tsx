@@ -9,6 +9,7 @@ import "primereact/resources/themes/lara-light-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
+import SEO from "./components/SEO";
 
 const App = () => {
   const value = {
@@ -16,6 +17,10 @@ const App = () => {
   };
   return (
     <PrimeReactProvider value={value}>
+      <SEO
+        title="Exequiel Sabatie | Desarrollador en Construcción"
+        description="Un desarrollador en construcción, únete a mi viaje en React, PHP, MySQL, TypeScript, AWS y más."
+      />
       <main>
         <Header />
         <Intro />
