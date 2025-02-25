@@ -1,4 +1,4 @@
-import { Card } from "primereact/card";
+import { Card } from 'primereact/card'
 
 const Proyectos = () => {
   return (
@@ -6,8 +6,8 @@ const Proyectos = () => {
       id="proyectos"
       className="min-h-screen flex align-items-center justify-content-center surface-0 text-800 w-full"
     >
-      <div className="grid w-full mt-5" style={{ maxWidth: "1200px" }}>
-        <div className="col-12 text-center md:text-left">
+      <div className="grid w-full mt-5" style={{ maxWidth: '1200px' }}>
+        <div className="col-12 text-left">
           <h2 className="text-4xl font-bold mb-3">Proyectos</h2>
           <Card title="Gestión de Proyectos BIM y ACC">
             <p>
@@ -86,7 +86,7 @@ const Proyectos = () => {
               <a
                 href="https://reusados.net"
                 target="_blank"
-                style={{ color: "blue", textDecoration: "underline" }}
+                style={{ color: 'blue', textDecoration: 'underline' }}
               >
                 https://reusados.net/
               </a>
@@ -131,7 +131,7 @@ const Proyectos = () => {
               <a
                 href="https://sgtours.com.ar/"
                 target="_blank"
-                style={{ color: "blue", textDecoration: "underline" }}
+                style={{ color: 'blue', textDecoration: 'underline' }}
               >
                 https://sgtours.com.ar/
               </a>
@@ -140,7 +140,7 @@ const Proyectos = () => {
               <a
                 href="https://sentimendoza.com.ar/"
                 target="_blank"
-                style={{ color: "blue", textDecoration: "underline" }}
+                style={{ color: 'blue', textDecoration: 'underline' }}
               >
                 https://sentimendoza.com.ar/
               </a>
@@ -168,7 +168,7 @@ const Proyectos = () => {
               <a
                 href="https://parabebes.com.ar/"
                 target="_blank"
-                style={{ color: "blue", textDecoration: "underline" }}
+                style={{ color: 'blue', textDecoration: 'underline' }}
               >
                 https://parabebes.com.ar/
               </a>
@@ -177,7 +177,7 @@ const Proyectos = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Proyectos;
+export default Proyectos
