@@ -3,7 +3,7 @@ export const proyectosList = [
     id: '1',
     titulo: 'Gestión de Proyectos BIM y ACC',
     descripcion:
-      'Desarrollé un sistema web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, integrando las APIs de Autodesk para optimizar la gestión de proyectos en BIM 360 y ACC.',
+      'Desarrollé un sistema web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, integre las APIs de Autodesk para optimizar la gestión de proyectos en BIM 360 y ACC. Este proyecto fue vendido a un grupo interno de Amazon en el área de construcciones."',
     lista: [
       'Autenticación de usuarios con control de sesiones.',
       'Visualización de proyectos y gestión de información clave.',
@@ -12,9 +12,9 @@ export const proyectosList = [
       'Seguimiento de usuarios para monitorear actividad e inactividad en Autodesk.',
     ],
     seguimiento:
-      'Posteriormente, el proyecto evolucionó a una versión en React, TypeScript y AWS, donde participé como colaborador en su desarrollo y mejora.',
+      'El proyecto avanzo a una versión en React, TypeScript y AWS, donde participé como colaborador.',
     actualidad:
-      'Aún trabajo en este proyecto interno de la empresa y puedo proveer el contacto de la persona a cargo en la actualidad si es necesario.',
+      'Aún trabajo en este proyecto interno de la empresa y puedo proveer el contacto del grupo a cargo en la actualidad.',
     links: '',
   },
   {
@@ -34,7 +34,8 @@ export const proyectosList = [
       'Control de acceso a secciones del sitio basado en roles de usuario.',
       'Diseño responsivo y optimizado para dispositivos móviles.',
     ],
-    seguimiento: '',
+    seguimiento:
+      'Mi idea era crear un lugar para compartir, ya que soy un apasionado, pero nadie más en mi comunidad gamer pareció entusiasmado y lo dejé en stand-by por ahora.',
     actualidad: '',
     links: 'https://reusados.net',
   },
@@ -42,7 +43,7 @@ export const proyectosList = [
     id: '3',
     titulo: 'Migración de WordPress',
     descripcion:
-      'Realicé la migración completa de dos sitios web en WordPress desde un hosting a otro, asegurando la correcta transferencia de archivos, base de datos y correos electrónicos.',
+      'Realicé la migración completa de dos sitios web en WordPress desde un hosting a otro, asegurando la transferencia de archivos, base de datos y correos electrónicos.',
     lista: [
       'Respaldé y restauré la base de datos MySQL y los archivos del sitio.',
       'Configuré el entorno en el nuevo hosting, asegurando compatibilidad con PHP y MySQL.',
