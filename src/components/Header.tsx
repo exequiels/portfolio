@@ -3,6 +3,7 @@ const Header = () => {
     { id: 1, label: 'Inicio' },
     { id: 2, label: 'Historia' },
     { id: 3, label: 'Proyectos' },
+    { id: 4, label: 'Cursos' },
     { id: 5, label: 'Contacto' },
   ]
 

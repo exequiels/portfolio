@@ -10,6 +10,7 @@ import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import SEO from './components/SEO'
+import Cursos from './pages/Cursos'
 
 const App = () => {
   const value = {
@@ -29,7 +30,10 @@ const App = () => {
         <hr />
         <Proyectos />
         <hr />
+        <Cursos />
+        <hr />
         <Contacto />
+        <hr />
         <Footer />
       </main>
     </PrimeReactProvider>
