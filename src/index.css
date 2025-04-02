@@ -11,17 +11,7 @@ p {
 }
 
 body {
-  background-color: #ffffff;
-}
-
-.img-responsive {
-  box-shadow: 10px 10px 5px var(--primary-color);
-  /* border-radius: var(--border-radius-3xl); */
-}
-
-@media (max-width: 576px) {
-  .img-responsive {
-    box-shadow: 0 10px 5px var(--primary-color);
-    /* border-radius: 0; */
-  }
+  background-color: #f9fdc4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
