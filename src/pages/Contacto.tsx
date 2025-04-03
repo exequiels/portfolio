@@ -45,8 +45,8 @@ const Contacto = () => {
       const data = await response.json()
 
       toast.current?.show({
-        severity: data.message.includes(':(') ? 'error' : 'success',
-        summary: data.message.includes(':(') ? 'Error' : 'Éxito',
+        severity: data.message.includes(':)') ? 'error' : 'success',
+        summary: data.message.includes(':)') ? 'Error' : 'Éxito',
         detail: data.message,
         life: 3000,
       })
@@ -123,7 +123,7 @@ const Contacto = () => {
               <div className="p-field p-mb-3 flex justify-content-end mt-2">
                 <button
                   type="submit"
-                  className="p-3 mt-3"
+                  className="p-3 mt-3 cursor-pointer"
                   disabled={!isFormValid()}
                 >
                   Enviar

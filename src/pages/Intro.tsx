@@ -24,7 +24,7 @@ const Intro = () => {
               <a href="#historia">
                 <button
                   onClick={() => (window.location.hash = 'historia')}
-                  className="p-3 my-2"
+                  className="p-3 my-2 cursor-pointer"
                 >
                   Mi Historia
                 </button>
@@ -32,7 +32,7 @@ const Intro = () => {
               <a href="#contacto">
                 <button
                   onClick={() => (window.location.hash = 'contacto')}
-                  className="p-3 m-2"
+                  className="p-3 m-2 cursor-pointer"
                 >
                   Contacto
                 </button>
