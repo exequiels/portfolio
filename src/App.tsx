@@ -1,20 +1,21 @@
-import { PrimeReactProvider } from "primereact/api";
-import Header from "./components/Header";
-import Intro from "./pages/Intro";
-import Historia from "./pages/Historia";
-import Footer from "./components/Footer";
-import Proyectos from "./pages/Proyectos";
-import Contacto from "./pages/Contacto";
-import "primereact/resources/themes/lara-light-blue/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
-import "primeflex/primeflex.css";
-import SEO from "./components/SEO";
+import { PrimeReactProvider } from 'primereact/api'
+import Header from './components/Header'
+import Intro from './pages/Intro'
+import Historia from './pages/Historia'
+import Footer from './components/Footer'
+import Proyectos from './pages/Proyectos'
+import Contacto from './pages/Contacto'
+import 'primereact/resources/themes/lara-light-blue/theme.css'
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css'
+import 'primeflex/primeflex.css'
+import SEO from './components/SEO'
+import Cursos from './pages/Cursos'
 
 const App = () => {
   const value = {
     ripple: true,
-  };
+  }
   return (
     <PrimeReactProvider value={value}>
       <SEO
@@ -24,13 +25,19 @@ const App = () => {
       <main>
         <Header />
         <Intro />
+        <hr />
         <Historia />
+        <hr />
         <Proyectos />
+        <hr />
+        <Cursos />
+        <hr />
         <Contacto />
+        <hr />
         <Footer />
       </main>
     </PrimeReactProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App

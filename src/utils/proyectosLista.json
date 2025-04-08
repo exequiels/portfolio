@@ -1,0 +1,77 @@
+{
+  "proyectosLista": [
+    {
+      "id": "1",
+      "titulo": "Gestión de Proyectos BIM y ACC",
+      "descripcion": "Continuando mi historia de vida...",
+      "lista": [
+        "Autenticación de usuarios con control de sesiones.",
+        "Visualización de proyectos y gestión de información clave.",
+        "Administración de issues y permisos para acceso a proyectos.",
+        "Creación y seguimiento de trouble tickets en BIM 360 y ACC.",
+        "Seguimiento de usuarios para monitorear actividad e inactividad en Autodesk."
+      ],
+      "seguimiento": "El proyecto avanzo a una versión en React...",
+      "actualidad": "Aún trabajo en este proyecto interno...",
+      "links": ""
+    },
+    {
+      "id": "2",
+      "titulo": "Plataforma de Videojuegos Usados",
+      "descripcion": "Desarrollé un sitio web en PHP...",
+      "lista": [
+        "Integración con las APIs de MercadoLibre...",
+        "Implementación de modelos (MVC)...",
+        "Autenticación y gestión de usuarios...",
+        "Renovación y obtención de tokens mediante cron jobs.",
+        "Extracción automatizada de datos con cron jobs.",
+        "Paginación optimizada para cargar contenido dinámico...",
+        "Panel de administración para gestionar publicaciones...",
+        "Sistema de error logging centralizado...",
+        "Control de acceso a secciones del sitio...",
+        "Diseño responsivo y optimizado para dispositivos móviles."
+      ],
+      "seguimiento": "Mi idea era crear un lugar para compartir...",
+      "actualidad": "",
+      "links": "https://reusados.net"
+    },
+    {
+      "id": "3",
+      "titulo": "Migración de WordPress",
+      "descripcion": "Realicé la migración completa de dos sitios web...",
+      "lista": [
+        "Respaldé y restauré la base de datos MySQL...",
+        "Configuré el entorno en el nuevo hosting...",
+        "Actualicé y ajusté la configuración del dominio y DNS.",
+        "Recreé y configuré cuentas de correo...",
+        "Optimicé la carga del sitio...",
+        "Verifiqué la funcionalidad del sitio...",
+        "Implementé medidas de seguridad..."
+      ],
+      "seguimiento": "",
+      "actualidad": "",
+      "links": [
+        { "url": "https://sgtours.com.ar/", "texto": "Sitio SG Tours" },
+        {
+          "url": "https://sentimendoza.com.ar/",
+          "texto": "Sitio Sentimientos Mendoza"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Blog con Afiliados",
+      "descripcion": "Un blog dedicado a compartir experiencias personales...",
+      "lista": [
+        "Experiencias personales en la crianza...",
+        "Enlaces de afiliados a productos recomendados.",
+        "Herramientas útiles como calculadoras..."
+      ],
+      "seguimiento": "",
+      "actualidad": "",
+      "links": [
+        { "url": "https://parabebes.com.ar/", "texto": "Blog Para Bebés" }
+      ]
+    }
+  ]
+}

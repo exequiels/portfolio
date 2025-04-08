@@ -1,10 +1,8 @@
-import { Button } from 'primereact/button'
-
 const Intro = () => {
   return (
     <div
       id="inicio"
-      className="min-h-screen flex align-items-center justify-content-center surface-0 text-800 w-full mt-3 md:mt-0"
+      className="min-h-screen flex align-items-center justify-content-center text-800 w-full mt-3 md:mt-0"
     >
       <div className="grid w-full" style={{ maxWidth: '1200px' }}>
         <div className="col-12 md:col-6 text-left md:text-left flex align-items-center">
@@ -24,18 +22,20 @@ const Intro = () => {
             </p>
             <div className="flex justify-content-center md:justify-content-start">
               <a href="#historia">
-                <Button
-                  label="Mi historia"
-                  className="mr-3 p-button-raised z-0"
-                  style={{ position: 'static' }}
-                />
+                <button
+                  onClick={() => (window.location.hash = 'historia')}
+                  className="p-3 my-2 cursor-pointer"
+                >
+                  Mi Historia
+                </button>
               </a>
               <a href="#contacto">
-                <Button
-                  label="Contacto"
-                  className="p-button-outlined z-0"
-                  style={{ position: 'static' }}
-                />
+                <button
+                  onClick={() => (window.location.hash = 'contacto')}
+                  className="p-3 m-2 cursor-pointer"
+                >
+                  Contacto
+                </button>
               </a>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Intro = () => {
           <img
             src="./images/exequiel.jpg"
             alt="Exequiel Sabatié"
-            className="block md:ml-auto rounded-circle md:ml-auto block md:h-full p-mx-auto p-my-2 img-responsive"
+            className="block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2"
             style={{
               width: '100%',
               maxWidth: '400px',

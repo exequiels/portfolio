@@ -1,20 +1,21 @@
-import { useState } from "react";
-import { Sidebar } from "primereact/sidebar";
-import { Button } from "primereact/button";
+import { useState } from 'react'
+import { Sidebar } from 'primereact/sidebar'
+import { Button } from 'primereact/button'
 
 const Menu = () => {
-  const [visible, setVisible] = useState<boolean>(false);
+  const [visible, setVisible] = useState<boolean>(false)
 
   const menuItems = [
-    { label: "Inicio", id: "#inicio" },
-    { label: "Historia", id: "#historia" },
-    { label: "Proyectos", id: "#proyectos" },
-    { label: "Contacto", id: "#contacto" },
-  ];
+    { label: 'Inicio', id: '#inicio' },
+    { label: 'Historia', id: '#historia' },
+    { label: 'Proyectos', id: '#proyectos' },
+    { label: 'Cursos', id: '#cursos,' },
+    { label: 'Contacto', id: '#contacto' },
+  ]
 
   const handleMenuClick = () => {
-    setVisible(false);
-  };
+    setVisible(false)
+  }
 
   return (
     <div className="card flex justify-content-center">
@@ -36,7 +37,7 @@ const Menu = () => {
       </Sidebar>
       <Button icon="pi pi-bars" onClick={() => setVisible(true)} />
     </div>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu
