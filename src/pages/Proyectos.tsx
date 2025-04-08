@@ -1,7 +1,19 @@
 import { Card } from 'primereact/card'
-import { proyectosList } from '../utils/proyectosList'
+import proyectosLista from '../utils/proyectosLista.json'
+
+type Proyecto = {
+  id: string
+  titulo: string
+  descripcion: string
+  lista: string[]
+  seguimiento: string
+  actualidad: string
+  links: string | Array<{ url: string; texto: string }> | ''
+}
 
 const Proyectos = () => {
+  const proyectosList: Proyecto[] = proyectosLista.proyectosLista
+
   return (
     <div
       id="proyectos"
