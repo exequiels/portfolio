@@ -1,10 +1,15 @@
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from '../utils/LanguageSwitcher'
+
 const Header = () => {
+  const { t } = useTranslation('common')
+
   const menuList = [
-    { id: 1, label: 'Inicio' },
-    { id: 2, label: 'Historia' },
-    { id: 3, label: 'Proyectos' },
-    { id: 4, label: 'Cursos' },
-    { id: 5, label: 'Contacto' },
+    { id: 1, label: t('menu.inicio'), link: 'inicio' },
+    { id: 2, label: t('menu.historia'), link: 'historia' },
+    { id: 3, label: t('menu.proyectos'), link: 'proyectos' },
+    { id: 4, label: t('menu.cursos'), link: 'cursos' },
+    { id: 5, label: t('menu.contacto'), link: 'contacto' },
   ]
 
   return (
@@ -15,10 +20,11 @@ const Header = () => {
           https://sabatie.com.ar/
         </a>
       </div>
+      <LanguageSwitcher />
       <div className="text-center mx-auto py-3" style={{ background: 'white' }}>
         {menuList.map((list) => (
           <span key={list.id} className="mx-2">
-            <a href={`#${list.label.toLowerCase()}`}>{list.label}</a>
+            <a href={`#${list.link}`}>{list.label}</a>
           </span>
         ))}
       </div>

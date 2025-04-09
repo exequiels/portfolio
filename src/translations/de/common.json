@@ -1,0 +1,57 @@
+{
+  "menu": {
+    "inicio": "Start",
+    "historia": "Geschichte",
+    "proyectos": "Projekte",
+    "cursos": "Kurse",
+    "contacto": "Kontakt"
+  },
+  "intro": {
+    "saludos": "Hallo, ich bin",
+    "frase": "Ich baue Dinge für das Web.",
+    "descripcion": "Ich bin ein Entwickler im Aufbau, derzeit wohnhaft in San Juan - Argentinien.",
+    "botonMiHistoria": "Meine Geschichte",
+    "botonContacto": "Kontakt"
+  },
+  "historia": {
+    "titulo": "Meine Geschichte",
+    "parrafo1": "Ich bin Exe, ein Computerliebhaber seit meiner Kindheit. Mit 40 Jahren beschloss ich, meinem Leben eine neue Richtung zu geben. Ich habe eine Krankheit überwunden und nach dem Krankenhausaufenthalt aufgehört, ständig nach materiellen Dingen zu streben. Ich habe mich entschieden, Dinge zu tun, die mir gefallen, und den Rest meiner Leidenschaft für das Leben und Lernen zu überlassen.",
+    "parrafo2": "Ich kündigte meinen Job und begann, mit dem Computer zu arbeiten – eine schwierige Entscheidung, da ich nicht allein lebe, sondern mit meiner Partnerin, und bereits mein erstes Kind hatte (jetzt habe ich zwei). Ich habe immer davon geträumt, in der Technologiebranche zu arbeiten, und jetzt verwirkliche ich diesen Traum. Diese Website ist Teil meiner Reise – ein Ort, an dem ich teile, was ich lerne, neue Ideen ausprobiere und wachse."
+  },
+  "proyectos": {
+    "titulo": "Projekte"
+  },
+  "cursos": {
+    "titulo": "Kurse",
+    "certificados": [
+      "Meta-Zertifikat – Einführung in die Front-End-Entwicklung",
+      "Meta-Zertifikat – Programmieren mit JavaScript",
+      "Meta-Zertifikat – React-Grundlagen",
+      "Meta-Zertifikat – Versionskontrolle",
+      "Meta-Zertifikat – Fortgeschrittenes React",
+      "UNLPAM-Zertifikat – Web-Layout mit HTML 5 und CSS",
+      "UNLPAM-Zertifikat – Fortgeschrittener JavaScript-Entwickler",
+      "UNLPAM-Zertifikat – Webprogrammierung mit PHP und MySQL"
+    ]
+  },
+  "github": {
+    "titulo": "GitHub-Repository",
+    "parrafo1": "Dies ist mein öffentliches Repository. Hier werde ich Projekte und Übungen hinzufügen; die meisten meiner Projekte sind privat und erfordern eine Genehmigung, um sie anzusehen.",
+    "parrafo2": "Dies ist ein direkter Auszug aus meinem persönlichen Wiki. Dieses Jahr habe ich beschlossen, ein Wiki zu erstellen, in dem ich alles festhalte, was ich lerne und baue. Viele Dinge habe ich damals nicht dokumentiert, und jetzt versuche ich, ein Protokoll zu führen, das mir hilft, zu lernen und eine gewisse Struktur, Ordnung, Strategien und persönliche Gedanken zu dem, was ich lerne und entwickle, beizubehalten. Dieser Auszug wäre eine Zusammenfassung meines persönlichen Wikis."
+  },
+  "contacto": {
+    "titulo": "Kontaktiere den Webmaster",
+    "subTitulo": "Sprechen wir?",
+    "nombre": "Name",
+    "correo": "E-Mail",
+    "mensaje": "Nachricht",
+    "botonEnviar": "Senden",
+    "exito": "Nachricht gesendet",
+    "error": "Fehler",
+    "success_contact_form": "Vielen Dank für deine Nachricht. Ich melde mich bald.",
+    "error_contact_form": "Die Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut.",
+    "invalid_email": "Die E-Mail-Adresse ist ungültig.",
+    "missing_fields": "Bitte fülle alle Felder aus.",
+    "rate_limit_exceeded": "Bitte warte einen Moment, bevor du eine weitere Nachricht sendest."
+  }
+}

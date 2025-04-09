@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const Intro = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div
       id="inicio"
@@ -8,17 +12,16 @@ const Intro = () => {
         <div className="col-12 md:col-6 text-left md:text-left flex align-items-center">
           <div>
             <div className="text-2xl mt-0 mb-2 text-700 line-height-3">
-              Hola, soy
+              {t('intro.saludos')}
             </div>
             <div className="block text-6xl font-bold mb-1">
               Exequiel Sabatié
             </div>
             <div className="text-6xl text-primary font-bold mb-3">
-              Construyo cosas para la web.
+              {t('intro.frase')}
             </div>
             <p className="text-2xl mt-0 mb-4 text-700 line-height-3">
-              Soy un desarrollador en construcción, actualmente residiendo en
-              San Juan - Argentina.
+              {t('intro.descripcion')}
             </p>
             <div className="flex justify-content-center md:justify-content-start">
               <a href="#historia">
@@ -26,7 +29,7 @@ const Intro = () => {
                   onClick={() => (window.location.hash = 'historia')}
                   className="p-3 my-2 cursor-pointer"
                 >
-                  Mi Historia
+                  {t('intro.botonMiHistoria')}
                 </button>
               </a>
               <a href="#contacto">
@@ -34,7 +37,7 @@ const Intro = () => {
                   onClick={() => (window.location.hash = 'contacto')}
                   className="p-3 m-2 cursor-pointer"
                 >
-                  Contacto
+                  {t('intro.botonContacto')}
                 </button>
               </a>
             </div>

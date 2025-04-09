@@ -1,4 +1,5 @@
 import { PrimeReactProvider } from 'primereact/api'
+import './utils/i18n'
 import Header from './components/Header'
 import Intro from './pages/Intro'
 import Historia from './pages/Historia'
