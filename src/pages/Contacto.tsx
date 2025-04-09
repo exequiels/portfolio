@@ -1,9 +1,12 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import { Card } from 'primereact/card'
-import { Toast } from 'primereact/toast'
+import { useTranslation } from 'react-i18next'
 
 const Contacto = () => {
-  const toast = useRef<Toast>(null)
+  const { t } = useTranslation('common')
+  const [mensaje, setMensaje] = useState('')
+  const [tipoMensaje, setTipoMensaje] = useState<'success' | 'error' | ''>('')
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -35,6 +38,19 @@ const Contacto = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
+    const mostrarMensaje = (
+      tipo: 'success' | 'error',
+      mensajeTraducido: string
+    ) => {
+      setTipoMensaje(tipo)
+      setMensaje(mensajeTraducido)
+
+      setTimeout(() => {
+        setMensaje('')
+        setTipoMensaje('')
+      }, 7000)
+    }
+
     try {
       const response = await fetch('https://sabatie.com.ar/contacto.php', {
         method: 'POST',
@@ -44,30 +60,25 @@ const Contacto = () => {
 
       const data = await response.json()
 
-      toast.current?.show({
-        severity: data.message.includes(':)') ? 'error' : 'success',
-        summary: data.message.includes(':)') ? 'Error' : 'Éxito',
-        detail: data.message,
-        life: 3000,
-      })
-
-      if (!data.message.includes(':(')) {
-        setFormData({
-          nombre: '',
-          email: '',
-          mensaje: '',
-        })
+      if (data.message === '200') {
+        mostrarMensaje('success', t('contacto.success_contact_form'))
+        setFormData({ nombre: '', email: '', mensaje: '' })
+      } else if (data.message === '400') {
+        mostrarMensaje('error', t('contacto.error_contact_form'))
+      } else if (data.message === 'Email inválido') {
+        mostrarMensaje('error', t('contacto.invalid_email'))
+      } else if (data.message === 'Todos los campos son obligatorios') {
+        mostrarMensaje('error', t('contacto.missing_fields'))
+      } else if (data.message.includes('espere')) {
+        mostrarMensaje('error', t('contacto.rate_limit_exceeded'))
       }
     } catch (error) {
-      toast.current?.show({
-        severity: 'error',
-        summary: 'Error',
-        detail:
-          error instanceof Error
-            ? error.message
-            : 'Hubo un problema al enviar el mensaje',
-        life: 3000,
-      })
+      mostrarMensaje(
+        'error',
+        error instanceof Error
+          ? error.message
+          : t('contacto.error_contact_form')
+      )
     }
   }
 
@@ -76,16 +87,15 @@ const Contacto = () => {
       id="contacto"
       className="min-h-screen flex align-items-center justify-content-center mt-5"
     >
-      <Toast ref={toast} />
       <div className="grid w-full" style={{ maxWidth: '1200px' }}>
         <div className="col-12 text-left">
-          <h2 className="text-4xl font-bold mb-3">Contacta al Webmaster</h2>
+          <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
 
           <Card className="p-3 bg-white" unstyled>
-            <h3 className="mb-2">Hablamos?</h3>
+            <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
             <form onSubmit={handleSubmit}>
               <div className="p-field p-mb-3">
-                <label htmlFor="nombre">Nombre</label>
+                <label htmlFor="nombre">{t('contacto.nombre')}</label>
                 <input
                   id="nombre"
                   type="text"
@@ -97,7 +107,7 @@ const Contacto = () => {
               </div>
 
               <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="email">Correo Electrónico</label>
+                <label htmlFor="email">{t('contacto.correo')}</label>
                 <input
                   id="email"
                   type="email"
@@ -109,7 +119,7 @@ const Contacto = () => {
               </div>
 
               <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="mensaje">Mensaje</label>
+                <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
                 <textarea
                   id="mensaje"
                   rows={5}
@@ -126,10 +136,19 @@ const Contacto = () => {
                   className="p-3 mt-3 cursor-pointer"
                   disabled={!isFormValid()}
                 >
-                  Enviar
+                  {t('contacto.botonEnviar')}
                 </button>
               </div>
             </form>
+            {mensaje && (
+              <div
+                className={`mt-3 p-2 flex justify-content-end ${
+                  tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
+                } text-white`}
+              >
+                {mensaje}
+              </div>
+            )}
           </Card>
         </div>
       </div>

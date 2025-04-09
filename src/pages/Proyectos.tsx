@@ -1,5 +1,5 @@
 import { Card } from 'primereact/card'
-import proyectosLista from '../utils/proyectosLista.json'
+import { useTranslation } from 'react-i18next'
 
 type Proyecto = {
   id: string
@@ -12,7 +12,11 @@ type Proyecto = {
 }
 
 const Proyectos = () => {
-  const proyectosList: Proyecto[] = proyectosLista.proyectosLista
+  const { t } = useTranslation('proyectos')
+
+  const proyectosList: Proyecto[] =
+    (t('proyectosLista', { returnObjects: true }) as unknown as Proyecto[]) ||
+    []
 
   return (
     <div
@@ -21,7 +25,7 @@ const Proyectos = () => {
     >
       <div className="grid w-full mt-5" style={{ maxWidth: '1200px' }}>
         <div className="col-12 text-left">
-          <h2 className="text-4xl font-bold mb-3">Proyectos</h2>
+          <h2 className="text-4xl font-bold mb-3">{t('titulo')}</h2>
           {proyectosList.map((proyecto) => (
             <Card key={proyecto.id} className="p-3 bg-white mb-3" unstyled>
               <h3 className="mb-2">{proyecto.titulo}</h3>

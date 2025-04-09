@@ -1,0 +1,84 @@
+{
+  "titulo": "Projects",
+  "proyectosLista": [
+    {
+      "id": "1",
+      "titulo": "BIM and ACC Project Management",
+      "descripcion": "I developed a web system using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap. I integrated Autodesk APIs to optimize project management in BIM 360 and ACC. This project was sold to an internal Amazon construction team.",
+      "lista": [
+        "User authentication with session control.",
+        "Project visualization and key information management.",
+        "Issue management and permissions for project access.",
+        "Creation and tracking of trouble tickets in BIM 360 and ACC.",
+        "User tracking to monitor activity and inactivity in Autodesk."
+      ],
+      "seguimiento": "The project evolved into a version built with React, TypeScript, and AWS, where I contributed as a collaborator.",
+      "actualidad": "I’m still working on this internal company project and can provide contact details of the current team in charge.",
+      "links": ""
+    },
+    {
+      "id": "2",
+      "titulo": "Used Video Game Platform",
+      "descripcion": "I developed a website using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap, focused on the buying and selling of used video games.",
+      "lista": [
+        "Integration with MercadoLibre APIs to display the latest updates on used video games.",
+        "Implementation of MVC models for modular code structure.",
+        "User authentication and role-based management.",
+        "Token renewal and retrieval using cron jobs.",
+        "Automated data extraction via cron jobs.",
+        "Optimized pagination to load dynamic content based on requested pages.",
+        "Admin panel to manage listings and users.",
+        "Centralized error logging system to register and display errors in one place.",
+        "Access control to site sections based on user roles.",
+        "Responsive design optimized for mobile devices."
+      ],
+      "seguimiento": "My idea was to create a place to share because I’m passionate about this, but no one else in my gamer community seemed interested, so I put it on hold for now.",
+      "actualidad": "",
+      "links": "https://reusados.net"
+    },
+    {
+      "id": "3",
+      "titulo": "WordPress Migration",
+      "descripcion": "I completed the full migration of two WordPress websites from one hosting provider to another, ensuring the transfer of files, database, and email accounts.",
+      "lista": [
+        "Backed up and restored the MySQL database and site files.",
+        "Set up the environment on the new hosting, ensuring PHP and MySQL compatibility.",
+        "Updated and adjusted domain and DNS settings.",
+        "Recreated and configured email accounts on the new hosting, ensuring proper operation.",
+        "Optimized site loading and server settings.",
+        "Verified site and plugin functionality after migration.",
+        "Implemented security measures to protect the site in its new location."
+      ],
+      "seguimiento": "",
+      "actualidad": "",
+      "links": [
+        {
+          "url": "https://sgtours.com.ar/",
+          "texto": "https://sgtours.com.ar/"
+        },
+        {
+          "url": "https://sentimendoza.com.ar/",
+          "texto": "https://sentimendoza.com.ar/"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Affiliate Blog",
+      "descripcion": "A blog dedicated to sharing personal experiences, with affiliate links and useful baby-related calculators. Built in React and using PrimeReact. A resource for current and future parents offering practical and valuable content.",
+      "lista": [
+        "Personal experiences in baby care and parenting.",
+        "Affiliate links to recommended products.",
+        "Useful tools like calculators for child well-being."
+      ],
+      "seguimiento": "",
+      "actualidad": "",
+      "links": [
+        {
+          "url": "https://parabebes.com.ar/",
+          "texto": "https://parabebes.com.ar/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "menu": {
+    "inicio": "Home",
+    "historia": "Story",
+    "proyectos": "Projects",
+    "cursos": "Courses",
+    "contacto": "Contact"
+  },
+  "intro": {
+    "saludos": "Hello, I am",
+    "frase": "I build things for the web.",
+    "descripcion": "I'm a developer in progress, currently living in San Juan - Argentina.",
+    "botonMiHistoria": "My Story",
+    "botonContacto": "Contact"
+  },
+  "historia": {
+    "titulo": "My Story",
+    "parrafo1": "I'm Exe, a computer enthusiast since I was a kid. At 40, I decided to take a turn in my life. I overcame an illness, and after leaving the hospital, I stopped chasing material things. I chose to do what I love and let everything else follow as a result of my passion for living and learning.",
+    "parrafo2": "I quit my job and started working with computers—a tough decision since I don’t live alone, but with my partner, and already had my first child (now I have two). I've always dreamed of working in something tech-related, and I'm turning that dream into reality. This site is part of that journey—a place where I’ll be sharing what I learn, experimenting with new ideas, and growing."
+  },
+  "proyectos": {
+    "titulo": "Projects"
+  },
+  "cursos": {
+    "titulo": "Courses",
+    "certificados": [
+      "Meta Certificate - Introduction to Front-End Development",
+      "Meta Certificate - Programming with JavaScript",
+      "Meta Certificate - React Basics",
+      "Meta Certificate - Version Control",
+      "Meta Certificate - Advanced React",
+      "UNLPAM Certificate - Web Layout with HTML 5 and CSS",
+      "UNLPAM Certificate - Advanced JavaScript Developer",
+      "UNLPAM Certificate - Web Programming with PHP and MySQL"
+    ]
+  },
+  "github": {
+    "titulo": "GitHub Repository",
+    "parrafo1": "This is my public repository. Here I will add projects and exercises; most of my projects are private and require permission to be viewed.",
+    "parrafo2": "This is a direct excerpt from my personal wiki. This year, I decided it was a good idea to create a wiki with everything I learn and build. There are many things I didn't document at the time, and now I'm trying to maintain a record that helps me learn and maintain some structure, order, strategies, and personal reflections about what I learn and create. This excerpt would be a summary of my personal wiki."
+  },
+  "contacto": {
+    "titulo": "Contact the Webmaster",
+    "subTitulo": "Shall we talk?",
+    "nombre": "Name",
+    "correo": "Email",
+    "mensaje": "Message",
+    "botonEnviar": "Send",
+    "exito": "Message sent",
+    "error": "Error",
+    "success_contact_form": "Thank you for your message. I will reply soon.",
+    "error_contact_form": "The message could not be sent. Please try again later.",
+    "invalid_email": "The email address is not valid.",
+    "missing_fields": "Please complete all fields.",
+    "rate_limit_exceeded": "Please wait a moment before sending another message."
+  }
+}

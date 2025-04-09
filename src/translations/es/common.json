@@ -1,0 +1,57 @@
+{
+  "menu": {
+    "inicio": "Inicio",
+    "historia": "Historia",
+    "proyectos": "Proyectos",
+    "cursos": "Cursos",
+    "contacto": "Contacto"
+  },
+  "intro": {
+    "saludos": "Hola, soy",
+    "frase": "Construyo cosas para la web.",
+    "descripcion": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",
+    "botonMiHistoria": "Mi Historia",
+    "botonContacto": "Contacto"
+  },
+  "historia": {
+    "titulo": "Mi Historia",
+    "parrafo1": "Soy Exe, un amante de las computadoras desde muy chico. A los 40 años decidí darle un giro a mi vida. Superé una enfermedad y al salir del hospital abandone la búsqueda insistente de lo material. Pensé en hacer cosas que me gusten y dejar que lo demás sea consecuencia de mi pasión por vivir y aprender.",
+    "parrafo2": "Renuncié a mi trabajo y me puse a trabajar con la computadora, una decisión difícil dado que no vivo solo, sino en pareja y ya tenía a mi primer hijo (ahora tengo dos). Siempre soñé con trabajar en algo relacionado con la tecnología, y estoy convirtiendo ese sueño en realidad. Este sitio es parte de mi viaje, un espacio donde voy a estar compartiendo lo que aprendo, experimentando con nuevas ideas y creciendo."
+  },
+  "proyectos": {
+    "titulo": "Proyectos"
+  },
+  "cursos": {
+    "titulo": "Cursos",
+    "certificados": [
+      "Certificado Meta - Introduction to Front-End Development",
+      "Certificado Meta - Programming with JavaScript",
+      "Certificado Meta - React Basics",
+      "Certificado Meta - Version Control",
+      "Certificado Meta - Advanced React",
+      "Certificado UNLPAM - Maquetación web con HTML 5 y CSS",
+      "Certificado UNLPAM - JavaScript Desarrollador Avanzado",
+      "Certificado UNLPAM - Programación Web con PHP y MySQL"
+    ]
+  },
+  "github": {
+    "titulo": "Repositorio de Github",
+    "parrafo1": "Este es mi repositorio público. Aquí agregaré proyectos y prácticas, la mayoría de mis proyectos son privados y debo dar permiso para que puedan ser vistos.",
+    "parrafo2": "Este es un extracto directo de mi wiki personal. Este año decidí que era una buena idea crear una wiki con todo lo que voy aprendiendo y construyendo. Hay muchas cosas que no documenté en su momento, y ahora intento mantener un registro que me ayude a aprender y llevar cierta estructura, orden, estrategias y pensamientos propios sobre lo que aprendo y construyo. Este extracto sería un resumen de mi wiki personal."
+  },
+  "contacto": {
+    "titulo": "Contacta al Webmaster",
+    "subTitulo": "Hablamos?",
+    "nombre": "Nombre",
+    "correo": "Correo Electrónico",
+    "mensaje": "Mensaje",
+    "botonEnviar": "Enviar",
+    "exito": "Mensaje enviado",
+    "error": "Error",
+    "success_contact_form": "Gracias por tu mensaje. Te responderé pronto.",
+    "error_contact_form": "No se pudo enviar el mensaje. Intenta más tarde.",
+    "invalid_email": "El correo electrónico no es válido.",
+    "missing_fields": "Por favor, completa todos los campos.",
+    "rate_limit_exceeded": "Espera un momento antes de enviar otro mensaje."
+  }
+}
