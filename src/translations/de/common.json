@@ -1,5 +1,10 @@
 {
+  "seo": {
+    "titulo": "Entwickler im Aufbau",
+    "descripcion": "Ein Entwickler im Aufbau – begleite mich auf meiner Reise durch React, PHP, MySQL, TypeScript, AWS und mehr."
+  },
   "menu": {
+    "logo": "Defektes Logo",
     "inicio": "Start",
     "historia": "Geschichte",
     "proyectos": "Projekte",

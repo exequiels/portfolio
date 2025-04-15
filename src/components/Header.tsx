@@ -15,7 +15,11 @@ const Header = () => {
   return (
     <header>
       <div className="text-center py-1 text-left">
-        <img src="./images/logo_roto.jpg" className="mx-2" title="Logo roto" />
+        <img
+          src="./images/logo_roto.jpg"
+          className="mx-2"
+          title={t('menu.logo')}
+        />
         <a href="https://sabatie.com.ar/" className="hover:no-underline">
           https://sabatie.com.ar/
         </a>
