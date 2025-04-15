@@ -1,5 +1,10 @@
 {
+  "seo": {
+    "titulo": "Desarrollador en Construcción",
+    "descripcion": "Un desarrollador en construcción, únete a mi viaje en React, PHP, MySQL, TypeScript, AWS y más."
+  },
   "menu": {
+    "logo": "Logo roto",
     "inicio": "Inicio",
     "historia": "Historia",
     "proyectos": "Proyectos",

@@ -1,5 +1,6 @@
 import { PrimeReactProvider } from 'primereact/api'
 import './utils/i18n'
+import { useTranslation } from 'react-i18next'
 import Header from './components/Header'
 import Intro from './pages/Intro'
 import Historia from './pages/Historia'
@@ -17,11 +18,13 @@ const App = () => {
   const value = {
     ripple: true,
   }
+
+  const { t } = useTranslation('common')
   return (
     <PrimeReactProvider value={value}>
       <SEO
-        title="Exequiel Sabatie | Desarrollador en Construcción"
-        description="Un desarrollador en construcción, únete a mi viaje en React, PHP, MySQL, TypeScript, AWS y más."
+        title={`Exequiel Sabatie | ${t('seo.titulo')}`}
+        description={t('seo.descripcion')}
       />
       <main>
         <Header />

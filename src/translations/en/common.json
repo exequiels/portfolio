@@ -1,5 +1,10 @@
 {
+  "seo": {
+    "titulo": "Developer in Progress",
+    "descripcion": "A developer in progress — join my journey through React, PHP, MySQL, TypeScript, AWS, and more."
+  },
   "menu": {
+    "logo": "Broken logo",
     "inicio": "Home",
     "historia": "Story",
     "proyectos": "Projects",
