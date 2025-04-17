@@ -12,6 +12,7 @@
     "contacto": "Contacto"
   },
   "intro": {
+    "imagen": "Imagen de perfil en baja calidad",
     "saludos": "Hola, soy",
     "frase": "Construyo cosas para la web.",
     "descripcion": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",

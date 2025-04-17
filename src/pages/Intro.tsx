@@ -45,7 +45,7 @@ const Intro = () => {
         </div>
         <div className="col-12 md:col-6 text-center flex justify-content-center align-items-center">
           <img
-            src="./images/exequiel.jpg"
+            src="./images/exequiel_low_quality_2.jpg"
             alt="Exequiel Sabatié"
             className="block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2"
             style={{
@@ -53,6 +53,7 @@ const Intro = () => {
               maxWidth: '400px',
               height: 'auto',
             }}
+            title={t('intro.imagen')}
           />
         </div>
       </div>
