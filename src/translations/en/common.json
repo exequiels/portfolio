@@ -12,6 +12,7 @@
     "contacto": "Contact"
   },
   "intro": {
+    "imagen": "Low-quality profile image",
     "saludos": "Hello, I am",
     "frase": "I build things for the web.",
     "descripcion": "I'm a developer in progress, currently living in San Juan - Argentina.",
