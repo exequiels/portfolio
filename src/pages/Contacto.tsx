@@ -133,7 +133,9 @@ const Contacto = () => {
               <div className="p-field p-mb-3 flex justify-content-end mt-2">
                 <button
                   type="submit"
-                  className="p-3 mt-3 cursor-pointer"
+                  className={`p-3 mt-3 ${
+                    isFormValid() ? 'cursor-pointer' : ''
+                  }`}
                   disabled={!isFormValid()}
                 >
                   {t('contacto.botonEnviar')}
