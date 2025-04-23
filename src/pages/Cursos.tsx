@@ -1,11 +1,11 @@
-import { useTranslation } from 'react-i18next'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Cursos = () => {
-  const { t } = useTranslation('common')
+  const { t } = useLenguajeFormalTranslations('common')
 
   const certificados = t('cursos.certificados', {
     returnObjects: true,
-  }) as string[]
+  }) as unknown as string[]
 
   return (
     <div

@@ -1,10 +1,13 @@
 {
   "seo": {
     "titulo": "Desarrollador en Construcción",
-    "descripcion": "Un desarrollador en construcción, únete a mi viaje en React, PHP, MySQL, TypeScript, AWS y más."
+    "titulo_formal": "Desarrollador de Software Profesional",
+    "descripcion": "Un desarrollador en construcción, únete a mi viaje en React, PHP, MySQL, TypeScript, AWS y más.",
+    "descripcion_formal": "Desarrollador de software especializado en tecnologías como React, PHP, MySQL, TypeScript, AWS, entre otras. Acompáñame en este camino profesional."
   },
   "menu": {
     "logo": "Logo roto",
+    "logo_formal": "Identidad visual en desarrollo",
     "inicio": "Inicio",
     "historia": "Historia",
     "proyectos": "Proyectos",
@@ -13,22 +16,33 @@
   },
   "intro": {
     "imagen": "Imagen de perfil en baja calidad",
+    "imagen_formal": "Retrato profesional en proceso de actualización",
     "saludos": "Hola, soy",
+    "saludos_formal": "Estimado visitante, mi nombre es",
     "frase": "Construyo cosas para la web.",
+    "frase_formal": "Desarrollo soluciones digitales para entornos web.",
     "descripcion": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",
+    "descripcion_formal": "Soy un profesional del desarrollo de software con residencia en San Juan, Argentina.",
     "botonMiHistoria": "Mi Historia",
-    "botonContacto": "Contacto"
+    "botonMiHistoria_formal": "Trayectoria Profesional",
+    "botonContacto": "Contacto",
+    "botonContacto_formal": "Solicitar Información"
   },
   "historia": {
     "titulo": "Mi Historia",
+    "titulo_formal": "Mi Trayectoria",
     "parrafo1": "Soy Exe, un amante de las computadoras desde muy chico. A los 40 años decidí darle un giro a mi vida. Superé una enfermedad y al salir del hospital abandone la búsqueda insistente de lo material. Pensé en hacer cosas que me gusten y dejar que lo demás sea consecuencia de mi pasión por vivir y aprender.",
-    "parrafo2": "Renuncié a mi trabajo y me puse a trabajar con la computadora, una decisión difícil dado que no vivo solo, sino en pareja y ya tenía a mi primer hijo (ahora tengo dos). Siempre soñé con trabajar en algo relacionado con la tecnología, y estoy convirtiendo ese sueño en realidad. Este sitio es parte de mi viaje, un espacio donde voy a estar compartiendo lo que aprendo, experimentando con nuevas ideas y creciendo."
+    "parrafo1_formal": "Mi nombre es Exequiel. Desde temprana edad he sentido una gran pasión por la informática. A los 40 años tomé la decisión de redirigir mi vida profesional, tras superar una enfermedad que transformó mi forma de ver el mundo. A partir de entonces, me enfoqué en dedicarme a lo que realmente me apasiona, permitiendo que el crecimiento profesional surja como consecuencia natural de esa elección.",
+    "parrafo2": "Renuncié a mi trabajo y me puse a trabajar con la computadora, una decisión difícil dado que no vivo solo, sino en pareja y ya tenía a mi primer hijo (ahora tengo dos). Siempre soñé con trabajar en algo relacionado con la tecnología, y estoy convirtiendo ese sueño en realidad. Este sitio es parte de mi viaje, un espacio donde voy a estar compartiendo lo que aprendo, experimentando con nuevas ideas y creciendo.",
+    "parrafo2_formal": "Tomé la difícil decisión de renunciar a mi empleo anterior para dedicarme profesionalmente al ámbito tecnológico, en el contexto de una vida familiar consolidada. Este sitio representa una parte importante de mi desarrollo profesional, donde comparto aprendizajes, experiencias y proyectos que reflejan mi evolución en el mundo del desarrollo de software."
   },
   "proyectos": {
-    "titulo": "Proyectos"
+    "titulo": "Proyectos",
+    "titulo_formal": "Portafolio de Proyectos"
   },
   "cursos": {
     "titulo": "Cursos",
+    "titulo_formal": "Formación Académica y Profesional",
     "certificados": [
       "Certificado Meta - Introduction to Front-End Development",
       "Certificado Meta - Programming with JavaScript",
@@ -42,22 +56,35 @@
   },
   "github": {
     "titulo": "Repositorio de Github",
+    "titulo_formal": "Repositorio Público de Proyectos",
     "parrafo1": "Este es mi repositorio público. Aquí agregaré proyectos y prácticas, la mayoría de mis proyectos son privados y debo dar permiso para que puedan ser vistos.",
-    "parrafo2": "Este es un extracto directo de mi wiki personal. Este año decidí que era una buena idea crear una wiki con todo lo que voy aprendiendo y construyendo. Hay muchas cosas que no documenté en su momento, y ahora intento mantener un registro que me ayude a aprender y llevar cierta estructura, orden, estrategias y pensamientos propios sobre lo que aprendo y construyo. Este extracto sería un resumen de mi wiki personal."
+    "parrafo1_formal": "Este es mi repositorio público en GitHub, donde comparto algunos de mis proyectos y ejercicios de práctica. Muchos de mis desarrollos se mantienen en privado por motivos de confidencialidad, aunque pueden ser consultados previa solicitud.",
+    "parrafo2": "Este es un extracto directo de mi wiki personal. Este año decidí que era una buena idea crear una wiki con todo lo que voy aprendiendo y construyendo. Hay muchas cosas que no documenté en su momento, y ahora intento mantener un registro que me ayude a aprender y llevar cierta estructura, orden, estrategias y pensamientos propios sobre lo que aprendo y construyo. Este extracto sería un resumen de mi wiki personal.",
+    "parrafo2_formal": "A continuación, presento un fragmento de mi wiki personal, un espacio que decidí crear con el objetivo de documentar de manera organizada los conocimientos y desarrollos que voy adquiriendo. Esta iniciativa me permite estructurar mejor mi aprendizaje y consolidar metodologías y estrategias propias en el proceso de desarrollo de software."
   },
   "contacto": {
     "titulo": "Contacta al Webmaster",
-    "subTitulo": "Hablamos?",
+    "titulo_formal": "Formulario de Contacto Profesional",
+    "subTitulo": "¿Hablamos?",
+    "subTitulo_formal": "¿Desea establecer contacto?",
     "nombre": "Nombre",
     "correo": "Correo Electrónico",
     "mensaje": "Mensaje",
     "botonEnviar": "Enviar",
+    "botonEnviar_formal": "Enviar Solicitud",
     "exito": "Mensaje enviado",
+    "exito_formal": "Su mensaje ha sido enviado exitosamente.",
     "error": "Error",
+    "error_formal": "Se ha producido un error al enviar su mensaje.",
     "success_contact_form": "Gracias por tu mensaje. Te responderé pronto.",
+    "success_contact_form_formal": "Gracias por su mensaje. Me pondré en contacto con usted a la brevedad.",
     "error_contact_form": "No se pudo enviar el mensaje. Intenta más tarde.",
+    "error_contact_form_formal": "No fue posible enviar el mensaje en este momento. Por favor, intente nuevamente más tarde.",
     "invalid_email": "El correo electrónico no es válido.",
+    "invalid_email_formal": "La dirección de correo electrónico proporcionada no es válida.",
     "missing_fields": "Por favor, completa todos los campos.",
-    "rate_limit_exceeded": "Espera un momento antes de enviar otro mensaje."
+    "missing_fields_formal": "Por favor, asegúrese de completar todos los campos requeridos.",
+    "rate_limit_exceeded": "Espera un momento antes de enviar otro mensaje.",
+    "rate_limit_exceeded_formal": "Por favor, espere unos instantes antes de enviar un nuevo mensaje."
   }
 }

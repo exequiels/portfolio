@@ -1,34 +1,53 @@
 {
   "seo": {
     "titulo": "Developer in Progress",
-    "descripcion": "A developer in progress — join my journey through React, PHP, MySQL, TypeScript, AWS, and more."
+    "titulo_formal": "Professional Software Developer in Training",
+    "descripcion": "A developer in progress — join my journey through React, PHP, MySQL, TypeScript, AWS, and more.",
+    "descripcion_formal": "Follow my journey as I advance professionally through modern technologies such as React, PHP, MySQL, TypeScript, AWS, and more."
   },
   "menu": {
     "logo": "Broken logo",
+    "logo_formal": "Placeholder Logo",
     "inicio": "Home",
+    "inicio_formal": "Home Page",
     "historia": "Story",
+    "historia_formal": "Professional Background",
     "proyectos": "Projects",
+    "proyectos_formal": "Portfolio of Projects",
     "cursos": "Courses",
-    "contacto": "Contact"
+    "cursos_formal": "Academic and Professional Training",
+    "contacto": "Contact",
+    "contacto_formal": "Get in Touch"
   },
   "intro": {
     "imagen": "Low-quality profile image",
+    "imagen_formal": "Temporary profile image",
     "saludos": "Hello, I am",
+    "saludos_formal": "Dear visitor, my name is",
     "frase": "I build things for the web.",
+    "frase_formal": "I develop and maintain professional-grade web solutions.",
     "descripcion": "I'm a developer in progress, currently living in San Juan - Argentina.",
+    "descripcion_formal": "I am an aspiring software developer based in San Juan, Argentina, continuously enhancing my skills and professional experience.",
     "botonMiHistoria": "My Story",
-    "botonContacto": "Contact"
+    "botonMiHistoria_formal": "Professional Background",
+    "botonContacto": "Contact",
+    "botonContacto_formal": "Request Information"
   },
   "historia": {
     "titulo": "My Story",
+    "titulo_formal": "My Professional Background",
     "parrafo1": "I'm Exe, a computer enthusiast since I was a kid. At 40, I decided to take a turn in my life. I overcame an illness, and after leaving the hospital, I stopped chasing material things. I chose to do what I love and let everything else follow as a result of my passion for living and learning.",
-    "parrafo2": "I quit my job and started working with computers—a tough decision since I don’t live alone, but with my partner, and already had my first child (now I have two). I've always dreamed of working in something tech-related, and I'm turning that dream into reality. This site is part of that journey—a place where I’ll be sharing what I learn, experimenting with new ideas, and growing."
+    "parrafo1_formal": "My name is Exe. I have had a deep passion for computing since childhood. At the age of 40, following a significant health recovery, I chose to reevaluate my priorities and focus on what truly inspires me—technology and continuous learning.",
+    "parrafo2": "I quit my job and started working with computers—a tough decision since I don’t live alone, but with my partner, and already had my first child (now I have two). I've always dreamed of working in something tech-related, and I'm turning that dream into reality. This site is part of that journey—a place where I’ll be sharing what I learn, experimenting with new ideas, and growing.",
+    "parrafo2_formal": "Leaving my previous job to pursue a career in technology was a challenging yet rewarding decision, especially while supporting a family. I am now fulfilling a long-standing aspiration to work in the tech field. This website serves as a platform to document my learning journey, showcase innovative ideas, and demonstrate my professional growth."
   },
   "proyectos": {
-    "titulo": "Projects"
+    "titulo": "Projects",
+    "titulo_formal": "Software Development Portfolio"
   },
   "cursos": {
     "titulo": "Courses",
+    "titulo_formal": "Completed Certifications and Technical Training",
     "certificados": [
       "Meta Certificate - Introduction to Front-End Development",
       "Meta Certificate - Programming with JavaScript",
@@ -42,22 +61,35 @@
   },
   "github": {
     "titulo": "GitHub Repository",
+    "titulo_formal": "Professional GitHub Repository",
     "parrafo1": "This is my public repository. Here I will add projects and exercises; most of my projects are private and require permission to be viewed.",
-    "parrafo2": "This is a direct excerpt from my personal wiki. This year, I decided it was a good idea to create a wiki with everything I learn and build. There are many things I didn't document at the time, and now I'm trying to maintain a record that helps me learn and maintain some structure, order, strategies, and personal reflections about what I learn and create. This excerpt would be a summary of my personal wiki."
+    "parrafo1_formal": "This is a curated public repository showcasing selected projects and practice work. Many of my projects are private and available upon request.",
+    "parrafo2": "This is a direct excerpt from my personal wiki. This year, I decided it was a good idea to create a wiki with everything I learn and build. There are many things I didn't document at the time, and now I'm trying to maintain a record that helps me learn and maintain some structure, order, strategies, and personal reflections about what I learn and create. This excerpt would be a summary of my personal wiki.",
+    "parrafo2_formal": "This excerpt is derived from a personal knowledge base I maintain. I created this resource to organize and reflect on my learning journey and development practices, ensuring a structured and strategic approach to continuous improvement."
   },
   "contacto": {
     "titulo": "Contact the Webmaster",
+    "titulo_formal": "Contact the Developer",
     "subTitulo": "Shall we talk?",
+    "subTitulo_formal": "Let's Connect for Professional Inquiries",
     "nombre": "Name",
     "correo": "Email",
     "mensaje": "Message",
     "botonEnviar": "Send",
+    "botonEnviar_formal": "Submit Message",
     "exito": "Message sent",
+    "exito_formal": "Your message has been successfully submitted.",
     "error": "Error",
+    "error_formal": "An error occurred while processing your request.",
     "success_contact_form": "Thank you for your message. I will reply soon.",
+    "success_contact_form_formal": "Thank you for reaching out. I will review your message and respond promptly.",
     "error_contact_form": "The message could not be sent. Please try again later.",
+    "error_contact_form_formal": "Unfortunately, your message could not be delivered at this time. Please try again shortly.",
     "invalid_email": "The email address is not valid.",
+    "invalid_email_formal": "The email address entered does not meet the required format.",
     "missing_fields": "Please complete all fields.",
-    "rate_limit_exceeded": "Please wait a moment before sending another message."
+    "missing_fields_formal": "All fields are required. Kindly ensure the form is fully completed before submitting.",
+    "rate_limit_exceeded": "Please wait a moment before sending another message.",
+    "rate_limit_exceeded_formal": "You have reached the submission limit. Please wait a moment before attempting to send another message."
   }
 }

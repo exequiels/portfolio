@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Historia = () => {
-  const { t } = useTranslation('common')
+  const { t } = useLenguajeFormalTranslations('common')
 
   return (
     <div

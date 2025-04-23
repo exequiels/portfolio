@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Card } from 'primereact/card'
-import { useTranslation } from 'react-i18next'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Contacto = () => {
-  const { t } = useTranslation('common')
+  const { t } = useLenguajeFormalTranslations('common')
   const [mensaje, setMensaje] = useState('')
   const [tipoMensaje, setTipoMensaje] = useState<'success' | 'error' | ''>('')
 

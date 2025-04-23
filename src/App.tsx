@@ -13,6 +13,7 @@ import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import SEO from './components/SEO'
 import Cursos from './pages/Cursos'
+import { LenguajeFormalProvider } from './context/LenguajeFormalContext'
 
 const App = () => {
   const value = {
@@ -22,24 +23,26 @@ const App = () => {
   const { t } = useTranslation('common')
   return (
     <PrimeReactProvider value={value}>
-      <SEO
-        title={`Exequiel Sabatie | ${t('seo.titulo')}`}
-        description={t('seo.descripcion')}
-      />
-      <main>
-        <Header />
-        <Intro />
-        <hr />
-        <Historia />
-        <hr />
-        <Proyectos />
-        <hr />
-        <Cursos />
-        <hr />
-        <Contacto />
-        <hr />
-        <Footer />
-      </main>
+      <LenguajeFormalProvider>
+        <SEO
+          title={`Exequiel Sabatie | ${t('seo.titulo')}`}
+          description={t('seo.descripcion')}
+        />
+        <main>
+          <Header />
+          <Intro />
+          <hr />
+          <Historia />
+          <hr />
+          <Proyectos />
+          <hr />
+          <Cursos />
+          <hr />
+          <Contacto />
+          <hr />
+          <Footer />
+        </main>
+      </LenguajeFormalProvider>
     </PrimeReactProvider>
   )
 }

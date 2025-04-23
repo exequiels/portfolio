@@ -1,34 +1,53 @@
 {
   "seo": {
     "titulo": "Entwickler im Aufbau",
-    "descripcion": "Ein Entwickler im Aufbau – begleite mich auf meiner Reise durch React, PHP, MySQL, TypeScript, AWS und mehr."
+    "titulo_formal": "Professioneller Softwareentwickler in Ausbildung",
+    "descripcion": "Ein Entwickler im Aufbau – begleite mich auf meiner Reise durch React, PHP, MySQL, TypeScript, AWS und mehr.",
+    "descripcion_formal": "Begleiten Sie mich auf meinem beruflichen Weg durch moderne Technologien wie React, PHP, MySQL, TypeScript, AWS und weitere."
   },
   "menu": {
     "logo": "Defektes Logo",
+    "logo_formal": "Platzhalter-Logo",
     "inicio": "Start",
+    "inicio_formal": "Startseite",
     "historia": "Geschichte",
+    "historia_formal": "Beruflicher Werdegang",
     "proyectos": "Projekte",
+    "proyectos_formal": "Projektportfolio",
     "cursos": "Kurse",
-    "contacto": "Kontakt"
+    "cursos_formal": "Akademische und berufliche Ausbildung",
+    "contacto": "Kontakt",
+    "contacto_formal": "Kontakt aufnehmen"
   },
   "intro": {
     "imagen": "Profilbild in niedriger Qualität",
+    "imagen_formal": "Vorläufiges Profilbild",
     "saludos": "Hallo, ich bin",
+    "saludos_formal": "Sehr geehrter Besucher, mein Name ist",
     "frase": "Ich baue Dinge für das Web.",
+    "frase_formal": "Ich entwickle und pflege professionelle Weblösungen.",
     "descripcion": "Ich bin ein Entwickler im Aufbau, derzeit wohnhaft in San Juan - Argentinien.",
+    "descripcion_formal": "Ich bin ein angehender Softwareentwickler mit Sitz in San Juan, Argentinien, der kontinuierlich seine Fähigkeiten und berufliche Erfahrung erweitert.",
     "botonMiHistoria": "Meine Geschichte",
-    "botonContacto": "Kontakt"
+    "botonMiHistoria_formal": "Beruflicher Werdegang",
+    "botonContacto": "Kontakt",
+    "botonContacto_formal": "Informationen anfordern"
   },
   "historia": {
     "titulo": "Meine Geschichte",
+    "titulo_formal": "Mein beruflicher Werdegang",
     "parrafo1": "Ich bin Exe, ein Computerliebhaber seit meiner Kindheit. Mit 40 Jahren beschloss ich, meinem Leben eine neue Richtung zu geben. Ich habe eine Krankheit überwunden und nach dem Krankenhausaufenthalt aufgehört, ständig nach materiellen Dingen zu streben. Ich habe mich entschieden, Dinge zu tun, die mir gefallen, und den Rest meiner Leidenschaft für das Leben und Lernen zu überlassen.",
-    "parrafo2": "Ich kündigte meinen Job und begann, mit dem Computer zu arbeiten – eine schwierige Entscheidung, da ich nicht allein lebe, sondern mit meiner Partnerin, und bereits mein erstes Kind hatte (jetzt habe ich zwei). Ich habe immer davon geträumt, in der Technologiebranche zu arbeiten, und jetzt verwirkliche ich diesen Traum. Diese Website ist Teil meiner Reise – ein Ort, an dem ich teile, was ich lerne, neue Ideen ausprobiere und wachse."
+    "parrafo1_formal": "Mein Name ist Exe. Seit meiner Kindheit habe ich eine tiefe Leidenschaft für Computer. Im Alter von 40 Jahren, nach einer bedeutenden gesundheitlichen Genesung, entschied ich mich, meine Prioritäten neu zu bewerten und mich auf das zu konzentrieren, was mich wirklich inspiriert – Technologie und kontinuierliches Lernen.",
+    "parrafo2": "Ich kündigte meinen Job und begann, mit dem Computer zu arbeiten – eine schwierige Entscheidung, da ich nicht allein lebe, sondern mit meiner Partnerin, und bereits mein erstes Kind hatte (jetzt habe ich zwei). Ich habe immer davon geträumt, in der Technologiebranche zu arbeiten, und jetzt verwirkliche ich diesen Traum. Diese Website ist Teil meiner Reise – ein Ort, an dem ich teile, was ich lerne, neue Ideen ausprobiere und wachse.",
+    "parrafo2_formal": "Den vorherigen Job zu verlassen, um eine Karriere in der Technologie zu verfolgen, war eine herausfordernde, aber lohnende Entscheidung, insbesondere während ich eine Familie unterstütze. Ich erfülle nun einen langjährigen Wunsch, im Technologiebereich zu arbeiten. Diese Website dient als Plattform, um meine Lernreise zu dokumentieren, innovative Ideen zu präsentieren und mein berufliches Wachstum zu demonstrieren."
   },
   "proyectos": {
-    "titulo": "Projekte"
+    "titulo": "Projekte",
+    "titulo_formal": "Softwareentwicklungsportfolio"
   },
   "cursos": {
     "titulo": "Kurse",
+    "titulo_formal": "Abgeschlossene Zertifizierungen und technische Schulungen",
     "certificados": [
       "Meta-Zertifikat – Einführung in die Front-End-Entwicklung",
       "Meta-Zertifikat – Programmieren mit JavaScript",
@@ -42,22 +61,35 @@
   },
   "github": {
     "titulo": "GitHub-Repository",
+    "titulo_formal": "Professionelles GitHub-Repository",
     "parrafo1": "Dies ist mein öffentliches Repository. Hier werde ich Projekte und Übungen hinzufügen; die meisten meiner Projekte sind privat und erfordern eine Genehmigung, um sie anzusehen.",
-    "parrafo2": "Dies ist ein direkter Auszug aus meinem persönlichen Wiki. Dieses Jahr habe ich beschlossen, ein Wiki zu erstellen, in dem ich alles festhalte, was ich lerne und baue. Viele Dinge habe ich damals nicht dokumentiert, und jetzt versuche ich, ein Protokoll zu führen, das mir hilft, zu lernen und eine gewisse Struktur, Ordnung, Strategien und persönliche Gedanken zu dem, was ich lerne und entwickle, beizubehalten. Dieser Auszug wäre eine Zusammenfassung meines persönlichen Wikis."
+    "parrafo1_formal": "Dies ist ein kuratiertes öffentliches Repository, das ausgewählte Projekte und Übungsarbeiten zeigt. Viele meiner Projekte sind privat und auf Anfrage verfügbar.",
+    "parrafo2": "Dies ist ein direkter Auszug aus meinem persönlichen Wiki. Dieses Jahr habe ich beschlossen, ein Wiki zu erstellen, in dem ich alles festhalte, was ich lerne und baue. Viele Dinge habe ich damals nicht dokumentiert, und jetzt versuche ich, ein Protokoll zu führen, das mir hilft, zu lernen und eine gewisse Struktur, Ordnung, Strategien und persönliche Gedanken zu dem, was ich lerne und entwickle, beizubehalten. Dieser Auszug wäre eine Zusammenfassung meines persönlichen Wikis.",
+    "parrafo2_formal": "Dieser Auszug stammt aus einer persönlichen Wissensdatenbank, die ich pflege. Ich habe diese Ressource erstellt, um meine Lernreise und Entwicklungspraxis zu organisieren und zu reflektieren, um einen strukturierten und strategischen Ansatz für kontinuierliche Verbesserungen sicherzustellen."
   },
   "contacto": {
-    "titulo": "Kontaktiere den Webmaster",
+    "titulo": "Kontaktieren Sie den Webmaster",
+    "titulo_formal": "Kontaktieren Sie den Entwickler",
     "subTitulo": "Sprechen wir?",
+    "subTitulo_formal": "Lassen Sie uns für berufliche Anfragen in Kontakt treten",
     "nombre": "Name",
     "correo": "E-Mail",
     "mensaje": "Nachricht",
     "botonEnviar": "Senden",
+    "botonEnviar_formal": "Nachricht senden",
     "exito": "Nachricht gesendet",
+    "exito_formal": "Ihre Nachricht wurde erfolgreich übermittelt.",
     "error": "Fehler",
-    "success_contact_form": "Vielen Dank für deine Nachricht. Ich melde mich bald.",
+    "error_formal": "Bei der Verarbeitung Ihrer Anfrage ist ein Fehler aufgetreten.",
+    "success_contact_form": "Danke für deine Nachricht. Ich werde mich bald melden.",
+    "success_contact_form_formal": "Vielen Dank für Ihre Nachricht. Ich werde sie prüfen und mich zeitnah bei Ihnen melden.",
     "error_contact_form": "Die Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut.",
+    "error_contact_form_formal": "Leider konnte Ihre Nachricht derzeit nicht zugestellt werden. Bitte versuchen Sie es in Kürze erneut.",
     "invalid_email": "Die E-Mail-Adresse ist ungültig.",
+    "invalid_email_formal": "Die eingegebene E-Mail-Adresse entspricht nicht dem erforderlichen Format.",
     "missing_fields": "Bitte fülle alle Felder aus.",
-    "rate_limit_exceeded": "Bitte warte einen Moment, bevor du eine weitere Nachricht sendest."
+    "missing_fields_formal": "Alle Felder sind erforderlich. Bitte stellen Sie sicher, dass das Formular vollständig ausgefüllt ist, bevor Sie es absenden.",
+    "rate_limit_exceeded": "Bitte warte einen Moment, bevor du eine weitere Nachricht sendest.",
+    "rate_limit_exceeded_formal": "Sie haben das Übermittlungslimit erreicht. Bitte warten Sie einen Moment, bevor Sie eine weitere Nachricht senden."
   }
 }
