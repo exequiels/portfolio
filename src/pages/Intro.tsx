@@ -1,7 +1,10 @@
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { LenguajeFormalContext } from '../context/LenguajeFormalContext'
+import { useContext } from 'react'
 
 const Intro = () => {
   const { t } = useLenguajeFormalTranslations('common')
+  const { isLenguajeFormal } = useContext(LenguajeFormalContext)
 
   return (
     <div
@@ -45,7 +48,11 @@ const Intro = () => {
         </div>
         <div className="col-12 md:col-6 text-center flex justify-content-center align-items-center">
           <img
-            src="./images/exequiel_low_quality_2.jpg"
+            src={
+              isLenguajeFormal
+                ? './images/exequiel.jpg'
+                : './images/exequiel_low_quality_2.jpg'
+            }
             alt="Exequiel Sabatié"
             className="block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2"
             style={{

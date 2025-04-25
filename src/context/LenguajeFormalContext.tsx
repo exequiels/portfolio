@@ -11,7 +11,7 @@ type LenguajeFormalType = {
   isLenguajeFormal: boolean
 }
 
-const LenguajeFormalContext = createContext<LenguajeFormalType>({
+export const LenguajeFormalContext = createContext<LenguajeFormalType>({
   isLenguajeFormal: false,
 })
 
