@@ -1,20 +1,20 @@
-import { themeStyles } from '../themes'
-import LanguageSwitcher from '../utils/LanguageSwitcher'
-import { useTheme } from '../context/ThemeContext'
-import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { themeStyles } from "../themes";
+import LanguageSwitcher from "../utils/LanguageSwitcher";
+import { useTheme } from "../context/ThemeContext";
+import useLenguajeFormalTranslations from "../hooks/useLenguajeFormalTranslations";
 
 const Header = () => {
-  const { theme } = useTheme()
-  const estilos = themeStyles[theme]
-  const { t } = useLenguajeFormalTranslations('common')
+  const { theme } = useTheme();
+  const estilos = themeStyles[theme];
+  const { t } = useLenguajeFormalTranslations("common");
 
   const menuList = [
-    { id: 1, label: t('menu.inicio'), link: 'inicio' },
-    { id: 2, label: t('menu.historia'), link: 'historia' },
-    { id: 3, label: t('menu.proyectos'), link: 'proyectos' },
-    { id: 4, label: t('menu.cursos'), link: 'cursos' },
-    { id: 5, label: t('menu.contacto'), link: 'contacto' },
-  ]
+    { id: 1, label: t("menu.inicio"), link: "inicio" },
+    { id: 2, label: t("menu.historia"), link: "historia" },
+    { id: 3, label: t("menu.proyectos"), link: "proyectos" },
+    { id: 4, label: t("menu.cursos"), link: "cursos" },
+    { id: 5, label: t("menu.contacto"), link: "contacto" },
+  ];
 
   return (
     <header className={estilos.headerContainer}>
@@ -23,10 +23,10 @@ const Header = () => {
           src={estilos.logoRuta}
           className={`mx-2`}
           style={estilos.logo || undefined}
-          title={t('menu.logo')}
+          title={t("menu.logo")}
         />
         <a href="https://sabatie.com.ar/" className={estilos.linkHome}>
-          {t('menu.sabatie')}
+          {t("menu.sabatie")}
         </a>
       </div>
       <LanguageSwitcher />
@@ -40,7 +40,7 @@ const Header = () => {
         ))}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
