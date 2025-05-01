@@ -15,6 +15,7 @@ body.default {
   --color: black;
   --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
+  --menus: #ffffff;
 
   --a-color: #1d4ed8;
   --a-hover: #1e40af;
@@ -26,6 +27,7 @@ body.formal {
   --bg: white;
   --color: black;
   --font: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --menus: #183462;
 
   --a-color: #4cd07d;
   --a-hover: #b9f8d0;
@@ -37,6 +39,7 @@ body.redes {
   --bg: #fef6e4;
   --color: #333;
   --font: "Arial", sans-serif;
+  --menus: red;
 
   --a-color: #ff6f61;
   --a-hover: #e04e3f;
@@ -53,6 +56,10 @@ a {
 
 a:hover {
   color: var(--a-hover);
+}
+
+.menus {
+  background-color: var(--menus);
 }
 
 body {

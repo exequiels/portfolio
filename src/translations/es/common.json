@@ -11,10 +11,15 @@
     "logo": "Logo roto",
     "logo_formal": "Identidad visual en desarrollo",
     "inicio": "Inicio",
+    "inicio_formal": "Principal",
     "historia": "Historia",
+    "historia_formal": "Background",
     "proyectos": "Proyectos",
+    "proyectos_formal": "Portfolio of Projects",
     "cursos": "Cursos",
-    "contacto": "Contacto"
+    "cursos_formal": "Academic Training",
+    "contacto": "Contacto",
+    "contacto_formal": "Get in Touch"
   },
   "intro": {
     "imagen": "Imagen de perfil en baja calidad",

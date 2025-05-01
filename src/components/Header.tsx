@@ -2,6 +2,7 @@ import { themeStyles } from "../themes";
 import LanguageSwitcher from "../utils/LanguageSwitcher";
 import { useTheme } from "../context/ThemeContext";
 import useLenguajeFormalTranslations from "../hooks/useLenguajeFormalTranslations";
+import Menu from "./Menu";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -30,14 +31,19 @@ const Header = () => {
         </a>
       </div>
       <LanguageSwitcher />
-      <div className={estilos.container}>
-        {menuList.map((list) => (
-          <span key={list.id} className="mx-2">
-            <a href={`#${list.link}`} className={estilos.link}>
-              {list.label}
-            </a>
-          </span>
-        ))}
+      <div className="mx-auto py-3 menus">
+        <div className={estilos.menu}>
+          <Menu />
+        </div>
+        <div className={estilos.container}>
+          {menuList.map((list) => (
+            <span key={list.id} className="mx-2">
+              <a href={`#${list.link}`} className={estilos.link}>
+                {list.label}
+              </a>
+            </span>
+          ))}
+        </div>
       </div>
     </header>
   );
