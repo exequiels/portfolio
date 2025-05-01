@@ -1,8 +1,12 @@
-import { useTranslation } from 'react-i18next'
+import { themeStyles } from '../themes'
 import LanguageSwitcher from '../utils/LanguageSwitcher'
+import { useTheme } from '../context/ThemeContext'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Header = () => {
-  const { t } = useTranslation('common')
+  const { theme } = useTheme()
+  const estilos = themeStyles[theme]
+  const { t } = useLenguajeFormalTranslations('common')
 
   const menuList = [
     { id: 1, label: t('menu.inicio'), link: 'inicio' },
@@ -13,22 +17,25 @@ const Header = () => {
   ]
 
   return (
-    <header>
-      <div className="text-center py-1 text-left">
+    <header className={estilos.headerContainer}>
+      <div className={estilos.headerContent}>
         <img
-          src="./images/logo_roto.jpg"
-          className="mx-2"
+          src={estilos.logoRuta}
+          className={`mx-2`}
+          style={estilos.logo || undefined}
           title={t('menu.logo')}
         />
-        <a href="https://sabatie.com.ar/" className="hover:no-underline">
-          https://sabatie.com.ar/
+        <a href="https://sabatie.com.ar/" className={estilos.linkHome}>
+          {t('menu.sabatie')}
         </a>
       </div>
       <LanguageSwitcher />
-      <div className="text-center mx-auto py-3" style={{ background: 'white' }}>
+      <div className={estilos.container}>
         {menuList.map((list) => (
           <span key={list.id} className="mx-2">
-            <a href={`#${list.link}`}>{list.label}</a>
+            <a href={`#${list.link}`} className={estilos.link}>
+              {list.label}
+            </a>
           </span>
         ))}
       </div>

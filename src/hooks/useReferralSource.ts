@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { REFERER_DOMAINS } from '../constants/referralSources'
 
 const useReferralSource = () => {
   const [source, setSource] = useState('default')
@@ -6,16 +7,8 @@ const useReferralSource = () => {
   useEffect(() => {
     const referrer = document.referrer
 
-    const plataformas: Record<string, string> = {
-      'linkedin.com': 'linkedin',
-      'facebook.com': 'facebook',
-      'instagram.com': 'instagram',
-      'youtube.com': 'youtube',
-      'google.com': 'google',
-    }
-
     if (referrer) {
-      const match = Object.entries(plataformas).find(([key]) =>
+      const match = Object.entries(REFERER_DOMAINS).find(([key]) =>
         referrer.includes(key)
       )
       if (match) setSource(match[1])

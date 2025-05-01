@@ -14,11 +14,20 @@ import 'primeflex/primeflex.css'
 import SEO from './components/SEO'
 import Cursos from './pages/Cursos'
 import { LenguajeFormalProvider } from './context/LenguajeFormalContext'
+import { useTheme } from './context/ThemeContext'
+import { useEffect } from 'react'
 
 const App = () => {
   const value = {
     ripple: true,
   }
+
+  const { theme } = useTheme()
+
+  useEffect(() => {
+    document.body.classList.remove('default', 'formal', 'redes')
+    document.body.classList.add(theme)
+  }, [theme])
 
   const { t } = useTranslation('common')
   return (

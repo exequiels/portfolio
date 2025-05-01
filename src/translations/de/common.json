@@ -6,6 +6,8 @@
     "descripcion_formal": "Begleiten Sie mich auf meinem beruflichen Weg durch moderne Technologien wie React, PHP, MySQL, TypeScript, AWS und weitere."
   },
   "menu": {
+    "sabatie": "https://sabatie.com.ar/",
+    "sabatie_formal": "SABATIE",
     "logo": "Defektes Logo",
     "logo_formal": "Platzhalter-Logo",
     "inicio": "Start",

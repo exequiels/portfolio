@@ -41,22 +41,14 @@ const Proyectos = () => {
               {proyecto.links &&
                 (typeof proyecto.links === 'string' ? (
                   <div className="flex justify-content-end">
-                    <a
-                      href={proyecto.links}
-                      target="_blank"
-                      style={{ color: 'blue', textDecoration: 'underline' }}
-                    >
+                    <a href={proyecto.links} target="_blank">
                       {proyecto.links}
                     </a>
                   </div>
                 ) : (
                   proyecto.links.map((link, index) => (
                     <div key={index} className="flex justify-content-end">
-                      <a
-                        href={link.url}
-                        target="_blank"
-                        style={{ color: 'blue', textDecoration: 'underline' }}
-                      >
+                      <a href={link.url} target="_blank">
                         {link.texto}
                       </a>
                     </div>

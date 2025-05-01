@@ -1,11 +1,5 @@
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from 'react'
-import useReferralSource from '../hooks/useReferralSource'
+import { createContext, ReactNode, useContext, useState } from 'react'
+import { getInitialLanguage } from '../utils/getInitialLanguage'
 
 type LenguajeFormalType = {
   isLenguajeFormal: boolean
@@ -20,21 +14,10 @@ export const LenguajeFormalProvider = ({
 }: {
   children: ReactNode
 }) => {
-  const source = useReferralSource()
-  const [isLenguajeFormal, setEsLenguajeFormal] = useState(false)
-
-  useEffect(() => {
-    if (source === 'linkedin' || source === 'google') {
-      setEsLenguajeFormal(true)
-    } else {
-      setEsLenguajeFormal(false)
-    }
-  }, [source])
-
-  const value = { isLenguajeFormal }
+  const [isLenguajeFormal] = useState(getInitialLanguage())
 
   return (
-    <LenguajeFormalContext.Provider value={value}>
+    <LenguajeFormalContext.Provider value={{ isLenguajeFormal }}>
       {children}
     </LenguajeFormalContext.Provider>
   )
