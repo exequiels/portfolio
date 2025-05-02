@@ -27,10 +27,10 @@ body.formal {
   --bg: white;
   --color: black;
   --font: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  --menus: #183462;
+  --menus: #282e38;
 
   --a-color: #3b82f6;
-  --a-hover: #3b82f6;
+  --a-hover: #999;
   --a-decoration: none;
   --a-font-weight: 600;
 }
