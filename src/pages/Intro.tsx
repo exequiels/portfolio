@@ -3,6 +3,7 @@ import { useTheme } from '../context/ThemeContext'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import { LenguajeFormalContext } from '../context/LenguajeFormalContext'
 import { useContext } from 'react'
+import { Button } from 'primereact/button'
 
 const Intro = () => {
   const { theme } = useTheme()
@@ -24,28 +25,26 @@ const Intro = () => {
             <div className="block text-6xl font-bold mb-1">
               Exequiel Sabatié
             </div>
-            <div className="text-6xl text-primary font-bold mb-3">
-              {t('intro.frase')}
-            </div>
+            <div className={`mb-3 ${estilos.queHago}`}>{t('intro.frase')}</div>
             <p className="text-2xl mt-0 mb-4 text-700 line-height-3">
               {t('intro.descripcion')}
             </p>
             <div className="flex justify-content-center md:justify-content-start">
               <a href="#historia">
-                <button
+                <Button
                   onClick={() => (window.location.hash = 'historia')}
-                  className="p-3 my-2 cursor-pointer"
-                >
-                  {t('intro.botonMiHistoria')}
-                </button>
+                  className="p-3 my-2 cursor-pointer p-button-raised"
+                  label={t('intro.botonMiHistoria')}
+                  unstyled={estilos.sinEstilo}
+                />
               </a>
               <a href="#contacto">
-                <button
+                <Button
                   onClick={() => (window.location.hash = 'contacto')}
-                  className="p-3 m-2 cursor-pointer"
-                >
-                  {t('intro.botonContacto')}
-                </button>
+                  className="p-3 m-2 cursor-pointer p-button-outlined"
+                  label={t('intro.botonContacto')}
+                  unstyled={estilos.sinEstilo}
+                />
               </a>
             </div>
           </div>
@@ -73,19 +72,3 @@ const Intro = () => {
 }
 
 export default Intro
-
-{
-  /* <Button
-label="Mi historia"
-className="mr-3 p-button-raised z-0"
-style={{ position: "static" }}
-/>
-</a>
-<a href="#contacto">
-<Button
-label="Contacto"
-className="p-button-outlined z-0"
-style={{ position: "static" }}
-/>
-</a> */
-}

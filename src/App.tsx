@@ -23,6 +23,7 @@ const App = () => {
   }
 
   const { theme } = useTheme()
+  const isDefault = theme === 'default'
 
   useEffect(() => {
     document.body.classList.remove('default', 'formal', 'redes')
@@ -40,15 +41,15 @@ const App = () => {
         <main>
           <Header />
           <Intro />
-          <hr />
+          {isDefault && <hr />}
           <Historia />
-          <hr />
+          {isDefault && <hr />}
           <Proyectos />
-          <hr />
+          {isDefault && <hr />}
           <Cursos />
-          <hr />
+          {isDefault && <hr />}
           <Contacto />
-          <hr />
+          {isDefault && <hr />}
           <Footer />
         </main>
       </LenguajeFormalProvider>

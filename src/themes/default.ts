@@ -1,6 +1,8 @@
 import { ThemeStyles } from './types'
 
 const defaultTheme: ThemeStyles = {
+  // Global
+  sinEstilo: true,
   // Header
   logo: {},
   logoRuta: './images/logo_roto.jpg',
@@ -13,6 +15,7 @@ const defaultTheme: ThemeStyles = {
   linkHome: '',
   // Intro
   img: '',
+  queHago: 'text-6xl font-bold text-primary',
 }
 
 export default defaultTheme

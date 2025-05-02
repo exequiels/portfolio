@@ -31,7 +31,7 @@ const Header = () => {
         </a>
       </div>
       <LanguageSwitcher />
-      <div className="mx-auto py-3 menus">
+      <div className="mx-auto py-3 bg-menu">
         <div className={estilos.menu}>
           <Menu />
         </div>

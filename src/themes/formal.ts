@@ -1,6 +1,8 @@
 import { ThemeStyles } from './types'
 
 const formalTheme: ThemeStyles = {
+  // Global
+  sinEstilo: false,
   // Header
   logo: { width: '30px' },
   logoRuta: './images/logo.webp',
@@ -13,6 +15,7 @@ const formalTheme: ThemeStyles = {
   linkHome: 'text-4xl ml-2 font-bold',
   // Intro
   img: 'img-responsive',
+  queHago: 'text-6xl font-bold text-primary',
 }
 
 export default formalTheme

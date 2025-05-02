@@ -1,4 +1,5 @@
 export interface ThemeStyles {
+  sinEstilo: boolean
   logo?: React.CSSProperties
   logoRuta: string
   menu: string
@@ -9,4 +10,5 @@ export interface ThemeStyles {
   link: string
   linkHome: string
   img: string
+  queHago: string
 }

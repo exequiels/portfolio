@@ -1,8 +1,15 @@
+import { themeStyles } from '../themes'
+import { useTheme } from '../context/ThemeContext'
 import { useState } from 'react'
 import { Card } from 'primereact/card'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { Button } from 'primereact/button'
+import { InputText } from 'primereact/inputtext'
+import { InputTextarea } from 'primereact/inputtextarea'
 
 const Contacto = () => {
+  const { theme } = useTheme()
+  const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
   const [mensaje, setMensaje] = useState('')
   const [tipoMensaje, setTipoMensaje] = useState<'success' | 'error' | ''>('')
@@ -91,55 +98,58 @@ const Contacto = () => {
         <div className="col-12 text-left">
           <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
 
-          <Card className="p-3 bg-white" unstyled>
+          <Card className="p-3 bg-white" unstyled={estilos.sinEstilo}>
             <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
             <form onSubmit={handleSubmit}>
               <div className="p-field p-mb-3">
                 <label htmlFor="nombre">{t('contacto.nombre')}</label>
-                <input
+                <InputText
                   id="nombre"
                   type="text"
                   value={formData.nombre}
                   onChange={handleChange}
                   required
                   className="w-full"
+                  unstyled={estilos.sinEstilo}
                 />
               </div>
 
               <div className="p-field p-mb-3 mt-2">
                 <label htmlFor="email">{t('contacto.correo')}</label>
-                <input
+                <InputText
                   id="email"
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
                   className="w-full"
+                  unstyled={estilos.sinEstilo}
                 />
               </div>
 
               <div className="p-field p-mb-3 mt-2">
                 <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
-                <textarea
+                <InputTextarea
                   id="mensaje"
                   rows={5}
                   value={formData.mensaje}
                   onChange={handleChange}
                   required
                   className="w-full"
+                  unstyled={estilos.sinEstilo}
                 />
               </div>
 
               <div className="p-field p-mb-3 flex justify-content-end mt-2">
-                <button
+                <Button
                   type="submit"
                   className={`p-3 mt-3 ${
                     isFormValid() ? 'cursor-pointer' : ''
                   }`}
                   disabled={!isFormValid()}
-                >
-                  {t('contacto.botonEnviar')}
-                </button>
+                  label={t('contacto.botonEnviar')}
+                  unstyled={estilos.sinEstilo}
+                />
               </div>
             </form>
             {mensaje && (

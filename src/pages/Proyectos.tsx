@@ -1,3 +1,5 @@
+import { themeStyles } from '../themes'
+import { useTheme } from '../context/ThemeContext'
 import { Card } from 'primereact/card'
 import { useTranslation } from 'react-i18next'
 
@@ -12,6 +14,8 @@ type Proyecto = {
 }
 
 const Proyectos = () => {
+  const { theme } = useTheme()
+  const estilos = themeStyles[theme]
   const { t } = useTranslation('proyectos')
 
   const proyectosList: Proyecto[] =
@@ -27,7 +31,11 @@ const Proyectos = () => {
         <div className="col-12 text-left">
           <h2 className="text-4xl font-bold mb-3">{t('titulo')}</h2>
           {proyectosList.map((proyecto) => (
-            <Card key={proyecto.id} className="p-3 bg-white mb-3" unstyled>
+            <Card
+              key={proyecto.id}
+              className="p-3 bg-white mb-3"
+              unstyled={estilos.sinEstilo}
+            >
               <h3 className="mb-2">{proyecto.titulo}</h3>
               <p>{proyecto.descripcion}</p>
               <ul>
