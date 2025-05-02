@@ -11,15 +11,15 @@
     "logo": "Logo roto",
     "logo_formal": "Identidad visual en desarrollo",
     "inicio": "Inicio",
-    "inicio_formal": "Principal",
-    "historia": "Historia",
-    "historia_formal": "Background",
+    "inicio_formal": "Inicio",
+    "historia": "Mi Historia",
+    "historia_formal": "Historia",
     "proyectos": "Proyectos",
-    "proyectos_formal": "Portfolio of Projects",
+    "proyectos_formal": "Portfolio de Proyectos",
     "cursos": "Cursos",
-    "cursos_formal": "Academic Training",
-    "contacto": "Contacto",
-    "contacto_formal": "Get in Touch"
+    "cursos_formal": "Capacitaciones",
+    "contacto": "Hablemos",
+    "contacto_formal": "Contacto"
   },
   "intro": {
     "imagen": "Imagen de perfil en baja calidad",
