@@ -29,8 +29,8 @@ body.formal {
   --font: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   --menus: #183462;
 
-  --a-color: #4cd07d;
-  --a-hover: #077730;
+  --a-color: #3b82f6;
+  --a-hover: #3b82f6;
   --a-decoration: none;
   --a-font-weight: 600;
 }
@@ -45,6 +45,11 @@ body.redes {
   --a-hover: #e04e3f;
   --a-decoration: none;
   --a-font-weight: 600;
+}
+
+.img-responsive {
+  box-shadow: 10px 10px 5px var(--primary-color);
+  /* border-radius: var(--border-radius-3xl); */
 }
 
 a {

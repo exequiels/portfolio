@@ -1,8 +1,12 @@
+import { themeStyles } from '../themes'
+import { useTheme } from '../context/ThemeContext'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import { LenguajeFormalContext } from '../context/LenguajeFormalContext'
 import { useContext } from 'react'
 
 const Intro = () => {
+  const { theme } = useTheme()
+  const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
   const { isLenguajeFormal } = useContext(LenguajeFormalContext)
 
@@ -54,7 +58,7 @@ const Intro = () => {
                 : './images/exequiel_low_quality_2.jpg'
             }
             alt="Exequiel Sabatié"
-            className="block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2"
+            className={`block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2 ${estilos.img}`}
             style={{
               width: '100%',
               maxWidth: '400px',
