@@ -1,6 +1,6 @@
 import { themeStyles } from '../themes'
 import { useTheme } from '../context/ThemeContext'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Card } from 'primereact/card'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import { Button } from 'primereact/button'
@@ -14,6 +14,8 @@ const Contacto = () => {
   const { t } = useLenguajeFormalTranslations('common')
   const [mensaje, setMensaje] = useState('')
   const [tipoMensaje, setTipoMensaje] = useState<'success' | 'error' | ''>('')
+  const isDefault = theme === 'default'
+  const toast = useRef<Toast | null>(null)
 
   const [formData, setFormData] = useState({
     nombre: '',
@@ -50,13 +52,23 @@ const Contacto = () => {
       tipo: 'success' | 'error',
       mensajeTraducido: string
     ) => {
-      setTipoMensaje(tipo)
-      setMensaje(mensajeTraducido)
+      if (isDefault) {
+        setTipoMensaje(tipo)
+        setMensaje(mensajeTraducido)
 
-      setTimeout(() => {
-        setMensaje('')
-        setTipoMensaje('')
-      }, 7000)
+        setTimeout(() => {
+          setMensaje('')
+          setTipoMensaje('')
+        }, 7000)
+      } else {
+        toast.current?.show({
+          severity: tipo,
+          summary:
+            tipo === 'success' ? t('contacto.exito') : t('contacto.error'),
+          detail: mensajeTraducido,
+          life: 5000,
+        })
+      }
     }
 
     try {
@@ -155,7 +167,7 @@ const Contacto = () => {
                   />
                 </div>
               </form>
-              {mensaje && (
+              {isDefault && mensaje && (
                 <div
                   className={`mt-3 p-2 flex justify-content-end ${
                     tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
