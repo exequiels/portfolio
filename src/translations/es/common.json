@@ -22,7 +22,7 @@
     "contacto_formal": "Contacto"
   },
   "languageSwitcher": {
-    "selecciona": "Selecciona Idioma",
+    "selecciona": "Idioma / Language / Sprache",
     "español": "Español",
     "ingles": "Inglés",
     "aleman": "Alemán"
@@ -31,7 +31,11 @@
     "imagen": "Imagen de perfil en baja calidad",
     "imagen_formal": "Retrato profesional en proceso de actualización",
     "saludos": "Hola, soy",
-    "saludos_formal": "Estimado visitante, mi nombre es",
+    "saludos_formal_dia": {
+      "buenos_dias": "Buenos días, mi nombre es",
+      "buenas_tardes": "Buenas tardes, mi nombre es",
+      "buenas_noches": "Buenas noches, mi nombre es"
+    },
     "frase": "Construyo cosas para la web.",
     "frase_formal": "Desarrollo soluciones digitales para entornos web.",
     "descripcion": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",

@@ -22,7 +22,7 @@
     "contacto_formal": "Get in Touch"
   },
   "languageSwitcher": {
-    "selecciona": "Select Language",
+    "selecciona": "Idioma / Language / Sprache",
     "español": "Spanish",
     "ingles": "English",
     "aleman": "German"
@@ -31,7 +31,11 @@
     "imagen": "Low-quality profile image",
     "imagen_formal": "Temporary profile image",
     "saludos": "Hello, I am",
-    "saludos_formal": "Dear visitor, my name is",
+    "saludos_formal_dia": {
+      "buenos_dias": "Good morning, my name is",
+      "buenas_tardes": "Good afternoon, my name is",
+      "buenas_noches": "Good evening, my name is"
+    },
     "frase": "I build things for the web.",
     "frase_formal": "I develop and maintain professional-grade web solutions.",
     "descripcion": "I'm a developer in progress, currently living in San Juan - Argentina.",

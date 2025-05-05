@@ -9,6 +9,7 @@ const Header = () => {
   const { theme } = useTheme()
   const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
+  const isDefault = theme === 'default'
 
   const menuList = [
     { id: 1, label: t('menu.inicio'), link: 'inicio' },
@@ -31,11 +32,7 @@ const Header = () => {
           {t('menu.sabatie')}
         </a>
       </div>
-      {theme === 'default' ? (
-        <LanguageSwitcher />
-      ) : (
-        <LanguageSwitcherDropdown />
-      )}
+      {isDefault ? <LanguageSwitcher /> : <LanguageSwitcherDropdown />}
       <div className="mx-auto py-3 bg-menu">
         <div className={estilos.menu}>
           <Menu />

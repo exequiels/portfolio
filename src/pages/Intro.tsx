@@ -11,6 +11,18 @@ const Intro = () => {
   const { t } = useLenguajeFormalTranslations('common')
   const { isLenguajeFormal } = useContext(LenguajeFormalContext)
 
+  const obtenerSaludoFormal = () => {
+    const hora = new Date().getHours()
+
+    if (hora >= 5 && hora < 12) {
+      return t('intro.saludos_formal_dia.buenos_dias')
+    } else if (hora >= 12 && hora < 20) {
+      return t('intro.saludos_formal_dia.buenas_tardes')
+    } else {
+      return t('intro.saludos_formal_dia.buenas_noches')
+    }
+  }
+
   return (
     <div
       id="inicio"
@@ -20,7 +32,7 @@ const Intro = () => {
         <div className="col-12 md:col-6 text-left md:text-left flex align-items-center">
           <div>
             <div className="text-2xl mt-0 mb-2 text-700 line-height-3">
-              {t('intro.saludos')}
+              {isLenguajeFormal ? obtenerSaludoFormal() : t('intro.saludos')}
             </div>
             <div className="block text-6xl font-bold mb-1">
               Exequiel Sabatié

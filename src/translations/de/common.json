@@ -22,7 +22,7 @@
     "contacto_formal": "Kontakt aufnehmen"
   },
   "languageSwitcher": {
-    "selecciona": "Sprache wählen",
+    "selecciona": "Idioma / Language / Sprache",
     "español": "Spanisch",
     "ingles": "Englisch",
     "aleman": "Deutsch"
@@ -31,7 +31,11 @@
     "imagen": "Profilbild in niedriger Qualität",
     "imagen_formal": "Vorläufiges Profilbild",
     "saludos": "Hallo, ich bin",
-    "saludos_formal": "Sehr geehrter Besucher, mein Name ist",
+    "saludos_formal_dia": {
+      "buenos_dias": "Guten Morgen, mein Name ist",
+      "buenas_tardes": "Guten Tag, mein Name ist",
+      "buenas_noches": "Guten Abend, mein Name ist"
+    },
     "frase": "Ich baue Dinge für das Web.",
     "frase_formal": "Ich entwickle und pflege professionelle Weblösungen.",
     "descripcion": "Ich bin ein Entwickler im Aufbau, derzeit wohnhaft in San Juan - Argentinien.",
