@@ -1,11 +1,16 @@
-import { useTranslation } from 'react-i18next'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Cursos = () => {
-  const { t } = useTranslation('common')
+  const { t } = useLenguajeFormalTranslations('common')
+
+  type Certificado = {
+    file: string
+    label: string
+  }
 
   const certificados = t('cursos.certificados', {
     returnObjects: true,
-  }) as string[]
+  }) as unknown as Certificado[]
 
   return (
     <div
@@ -16,14 +21,14 @@ const Cursos = () => {
         <div className="col-12 text-left">
           <h2 className="text-4xl font-bold mb-3">{t('cursos.titulo')}</h2>
           <ul>
-            {certificados.map((label, index) => (
+            {certificados.map((cert, index) => (
               <li key={index} className="m-5">
                 <a
-                  href={`./files/${label}.pdf`}
+                  href={`./files/${cert.file}.pdf`}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {label}
+                  {cert.label}
                 </a>
               </li>
             ))}
