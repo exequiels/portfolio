@@ -18,7 +18,7 @@ const Menu = () => {
   }
 
   return (
-    <div className="card flex justify-content-center">
+    <div className="card flex justify-content-end">
       <Sidebar visible={visible} onHide={() => setVisible(false)} fullScreen>
         <div className="flex flex-column align-items-center">
           <h1 className="mb-3">Menu</h1>
@@ -35,7 +35,11 @@ const Menu = () => {
           ))}
         </div>
       </Sidebar>
-      <Button icon="pi pi-bars" onClick={() => setVisible(true)} />
+      <Button
+        icon="pi pi-bars"
+        className="bg-primary"
+        onClick={() => setVisible(true)}
+      />
     </div>
   )
 }

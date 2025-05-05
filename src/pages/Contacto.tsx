@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import { themeStyles } from '../themes'
+import { useTheme } from '../context/ThemeContext'
+import { useRef, useState } from 'react'
 import { Card } from 'primereact/card'
-import { useTranslation } from 'react-i18next'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { Button } from 'primereact/button'
+import { InputText } from 'primereact/inputtext'
+import { InputTextarea } from 'primereact/inputtextarea'
+import { Toast } from 'primereact/toast'
 
 const Contacto = () => {
-  const { t } = useTranslation('common')
+  const { theme } = useTheme()
+  const estilos = themeStyles[theme]
+  const { t } = useLenguajeFormalTranslations('common')
   const [mensaje, setMensaje] = useState('')
   const [tipoMensaje, setTipoMensaje] = useState<'success' | 'error' | ''>('')
+  const isDefault = theme === 'default'
+  const toast = useRef<Toast | null>(null)
 
   const [formData, setFormData] = useState({
     nombre: '',
@@ -42,13 +52,23 @@ const Contacto = () => {
       tipo: 'success' | 'error',
       mensajeTraducido: string
     ) => {
-      setTipoMensaje(tipo)
-      setMensaje(mensajeTraducido)
+      if (isDefault) {
+        setTipoMensaje(tipo)
+        setMensaje(mensajeTraducido)
 
-      setTimeout(() => {
-        setMensaje('')
-        setTipoMensaje('')
-      }, 7000)
+        setTimeout(() => {
+          setMensaje('')
+          setTipoMensaje('')
+        }, 7000)
+      } else {
+        toast.current?.show({
+          severity: tipo,
+          summary:
+            tipo === 'success' ? t('contacto.exito') : t('contacto.error'),
+          detail: mensajeTraducido,
+          life: 5000,
+        })
+      }
     }
 
     try {
@@ -83,78 +103,84 @@ const Contacto = () => {
   }
 
   return (
-    <div
-      id="contacto"
-      className="min-h-screen flex align-items-center justify-content-center mt-5"
-    >
-      <div className="grid w-full" style={{ maxWidth: '1200px' }}>
-        <div className="col-12 text-left">
-          <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
+    <>
+      <Toast ref={toast} />
+      <div
+        id="contacto"
+        className="min-h-screen flex align-items-center justify-content-center mt-5"
+      >
+        <div className="grid w-full" style={{ maxWidth: '1200px' }}>
+          <div className="col-12 text-left">
+            <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
 
-          <Card className="p-3 bg-white" unstyled>
-            <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="p-field p-mb-3">
-                <label htmlFor="nombre">{t('contacto.nombre')}</label>
-                <input
-                  id="nombre"
-                  type="text"
-                  value={formData.nombre}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                />
-              </div>
+            <Card className="p-3 bg-white" unstyled={estilos.sinEstilo}>
+              <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
+              <form onSubmit={handleSubmit}>
+                <div className="p-field p-mb-3">
+                  <label htmlFor="nombre">{t('contacto.nombre')}</label>
+                  <InputText
+                    id="nombre"
+                    type="text"
+                    value={formData.nombre}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="email">{t('contacto.correo')}</label>
-                <input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                />
-              </div>
+                <div className="p-field p-mb-3 mt-2">
+                  <label htmlFor="email">{t('contacto.correo')}</label>
+                  <InputText
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
-                <textarea
-                  id="mensaje"
-                  rows={5}
-                  value={formData.mensaje}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                />
-              </div>
+                <div className="p-field p-mb-3 mt-2">
+                  <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
+                  <InputTextarea
+                    id="mensaje"
+                    rows={5}
+                    value={formData.mensaje}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 flex justify-content-end mt-2">
-                <button
-                  type="submit"
-                  className={`p-3 mt-3 ${
-                    isFormValid() ? 'cursor-pointer' : ''
-                  }`}
-                  disabled={!isFormValid()}
+                <div className="p-field p-mb-3 flex justify-content-end mt-2">
+                  <Button
+                    type="submit"
+                    className={`p-3 mt-3 ${
+                      isFormValid() ? 'cursor-pointer' : ''
+                    }`}
+                    disabled={!isFormValid()}
+                    label={t('contacto.botonEnviar')}
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
+              </form>
+              {isDefault && mensaje && (
+                <div
+                  className={`mt-3 p-2 flex justify-content-end ${
+                    tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
+                  } text-white`}
                 >
-                  {t('contacto.botonEnviar')}
-                </button>
-              </div>
-            </form>
-            {mensaje && (
-              <div
-                className={`mt-3 p-2 flex justify-content-end ${
-                  tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
-                } text-white`}
-              >
-                {mensaje}
-              </div>
-            )}
-          </Card>
+                  {mensaje}
+                </div>
+              )}
+            </Card>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -13,33 +13,46 @@ import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import SEO from './components/SEO'
 import Cursos from './pages/Cursos'
+import { LenguajeFormalProvider } from './context/LenguajeFormalContext'
+import { useTheme } from './context/ThemeContext'
+import { useEffect } from 'react'
 
 const App = () => {
   const value = {
     ripple: true,
   }
 
+  const { theme } = useTheme()
+  const isDefault = theme === 'default'
+
+  useEffect(() => {
+    document.body.classList.remove('default', 'formal', 'redes')
+    document.body.classList.add(theme)
+  }, [theme])
+
   const { t } = useTranslation('common')
   return (
     <PrimeReactProvider value={value}>
-      <SEO
-        title={`Exequiel Sabatie | ${t('seo.titulo')}`}
-        description={t('seo.descripcion')}
-      />
-      <main>
-        <Header />
-        <Intro />
-        <hr />
-        <Historia />
-        <hr />
-        <Proyectos />
-        <hr />
-        <Cursos />
-        <hr />
-        <Contacto />
-        <hr />
-        <Footer />
-      </main>
+      <LenguajeFormalProvider>
+        <SEO
+          title={`Exequiel Sabatie | ${t('seo.titulo')}`}
+          description={t('seo.descripcion')}
+        />
+        <main>
+          <Header />
+          <Intro />
+          {isDefault && <hr />}
+          <Historia />
+          {isDefault && <hr />}
+          <Proyectos />
+          {isDefault && <hr />}
+          <Cursos />
+          {isDefault && <hr />}
+          <Contacto />
+          {isDefault && <hr />}
+          <Footer />
+        </main>
+      </LenguajeFormalProvider>
     </PrimeReactProvider>
   )
 }
