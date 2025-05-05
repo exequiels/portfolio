@@ -10,6 +10,7 @@ const Intro = () => {
   const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
   const { isLenguajeFormal } = useContext(LenguajeFormalContext)
+  const isDefault = theme === 'default'
 
   const obtenerSaludoFormal = () => {
     const hora = new Date().getHours()
@@ -64,9 +65,9 @@ const Intro = () => {
         <div className="col-12 md:col-6 text-center flex justify-content-center align-items-center">
           <img
             src={
-              isLenguajeFormal
-                ? './images/exequiel.jpg'
-                : './images/exequiel_low_quality_2.jpg'
+              isDefault
+                ? './images/exequiel_low_quality_2.jpg'
+                : './images/exequiel.jpg'
             }
             alt="Exequiel Sabatié"
             className={`block md:ml-auto md:ml-auto block md:h-full p-mx-auto p-my-2 ${estilos.img}`}

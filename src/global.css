@@ -39,14 +39,15 @@ body.formal {
 }
 
 body.redes {
-  --bg: #fef6e4;
-  --color: #333;
-  --font: 'Arial', sans-serif;
-  --menu: red;
-  --footer: red;
+  --bg: white;
+  --color: black;
+  --font: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --menu: #282e38;
+  --footer: #282e38;
+  --queHago: #3b82f6;
 
-  --a-color: #ff6f61;
-  --a-hover: #e04e3f;
+  --a-color: #3b82f6;
+  --a-hover: #75a9fd;
   --a-decoration: none;
   --a-font-weight: 600;
 }

@@ -4,17 +4,17 @@ const redesTheme: ThemeStyles = {
   // Global
   sinEstilo: false,
   // Header
-  logo: { width: '40px', height: 'auto' },
+  logo: { width: '30px' },
   logoRuta: './images/logo.webp',
-  menu: 'md:hidden mr-4',
-  container: 'text-center mx-auto py-3 bg-white',
-  headerContainer: '',
-  headerContent: 'text-center py-1 text-left',
+  menu: 'md:hidden mr-2',
+  container: 'hidden md:flex justify-content-end py-3',
+  headerContainer: 'bg-white',
+  headerContent: 'text-center py-1 text-left p-2 mt-5',
   button: 'p-button p-button-text p-button-rounded',
-  link: '',
-  linkHome: '',
+  link: 'text-lg',
+  linkHome: 'text-4xl ml-2 font-bold',
   // Intro
-  img: '',
+  img: 'img-responsive',
   queHago: 'text-6xl font-bold text-primary',
 }
 
