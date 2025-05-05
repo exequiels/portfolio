@@ -6,6 +6,7 @@ import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslation
 import { Button } from 'primereact/button'
 import { InputText } from 'primereact/inputtext'
 import { InputTextarea } from 'primereact/inputtextarea'
+import { Toast } from 'primereact/toast'
 
 const Contacto = () => {
   const { theme } = useTheme()
@@ -90,81 +91,84 @@ const Contacto = () => {
   }
 
   return (
-    <div
-      id="contacto"
-      className="min-h-screen flex align-items-center justify-content-center mt-5"
-    >
-      <div className="grid w-full" style={{ maxWidth: '1200px' }}>
-        <div className="col-12 text-left">
-          <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
+    <>
+      <Toast ref={toast} />
+      <div
+        id="contacto"
+        className="min-h-screen flex align-items-center justify-content-center mt-5"
+      >
+        <div className="grid w-full" style={{ maxWidth: '1200px' }}>
+          <div className="col-12 text-left">
+            <h2 className="text-4xl font-bold mb-3">{t('contacto.titulo')}</h2>
 
-          <Card className="p-3 bg-white" unstyled={estilos.sinEstilo}>
-            <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="p-field p-mb-3">
-                <label htmlFor="nombre">{t('contacto.nombre')}</label>
-                <InputText
-                  id="nombre"
-                  type="text"
-                  value={formData.nombre}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                  unstyled={estilos.sinEstilo}
-                />
-              </div>
+            <Card className="p-3 bg-white" unstyled={estilos.sinEstilo}>
+              <h3 className="mb-2">{t('contacto.subTitulo')}</h3>
+              <form onSubmit={handleSubmit}>
+                <div className="p-field p-mb-3">
+                  <label htmlFor="nombre">{t('contacto.nombre')}</label>
+                  <InputText
+                    id="nombre"
+                    type="text"
+                    value={formData.nombre}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="email">{t('contacto.correo')}</label>
-                <InputText
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                  unstyled={estilos.sinEstilo}
-                />
-              </div>
+                <div className="p-field p-mb-3 mt-2">
+                  <label htmlFor="email">{t('contacto.correo')}</label>
+                  <InputText
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 mt-2">
-                <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
-                <InputTextarea
-                  id="mensaje"
-                  rows={5}
-                  value={formData.mensaje}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                  unstyled={estilos.sinEstilo}
-                />
-              </div>
+                <div className="p-field p-mb-3 mt-2">
+                  <label htmlFor="mensaje">{t('contacto.mensaje')}</label>
+                  <InputTextarea
+                    id="mensaje"
+                    rows={5}
+                    value={formData.mensaje}
+                    onChange={handleChange}
+                    required
+                    className="w-full"
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
 
-              <div className="p-field p-mb-3 flex justify-content-end mt-2">
-                <Button
-                  type="submit"
-                  className={`p-3 mt-3 ${
-                    isFormValid() ? 'cursor-pointer' : ''
-                  }`}
-                  disabled={!isFormValid()}
-                  label={t('contacto.botonEnviar')}
-                  unstyled={estilos.sinEstilo}
-                />
-              </div>
-            </form>
-            {mensaje && (
-              <div
-                className={`mt-3 p-2 flex justify-content-end ${
-                  tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
-                } text-white`}
-              >
-                {mensaje}
-              </div>
-            )}
-          </Card>
+                <div className="p-field p-mb-3 flex justify-content-end mt-2">
+                  <Button
+                    type="submit"
+                    className={`p-3 mt-3 ${
+                      isFormValid() ? 'cursor-pointer' : ''
+                    }`}
+                    disabled={!isFormValid()}
+                    label={t('contacto.botonEnviar')}
+                    unstyled={estilos.sinEstilo}
+                  />
+                </div>
+              </form>
+              {mensaje && (
+                <div
+                  className={`mt-3 p-2 flex justify-content-end ${
+                    tipoMensaje === 'success' ? 'bg-green-600' : 'bg-red-600'
+                  } text-white`}
+                >
+                  {mensaje}
+                </div>
+              )}
+            </Card>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
