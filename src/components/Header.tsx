@@ -1,6 +1,7 @@
 import { themeStyles } from '../themes'
 import { useTheme } from '../context/ThemeContext'
 import LanguageSwitcher from '../utils/LanguageSwitcher'
+import LanguageSwitcherDropdown from '../utils/LanguageSwitcherDropdown'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import Menu from './Menu'
 
@@ -30,7 +31,11 @@ const Header = () => {
           {t('menu.sabatie')}
         </a>
       </div>
-      <LanguageSwitcher />
+      {theme === 'default' ? (
+        <LanguageSwitcher />
+      ) : (
+        <LanguageSwitcherDropdown />
+      )}
       <div className="mx-auto py-3 bg-menu">
         <div className={estilos.menu}>
           <Menu />

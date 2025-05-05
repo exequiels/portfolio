@@ -21,6 +21,12 @@
     "contacto": "Kontakt",
     "contacto_formal": "Kontakt aufnehmen"
   },
+  "languageSwitcher": {
+    "selecciona": "Sprache wählen",
+    "español": "Spanisch",
+    "ingles": "Englisch",
+    "aleman": "Deutsch"
+  },
   "intro": {
     "imagen": "Profilbild in niedriger Qualität",
     "imagen_formal": "Vorläufiges Profilbild",
@@ -51,14 +57,38 @@
     "titulo": "Kurse",
     "titulo_formal": "Abgeschlossene Zertifizierungen und technische Schulungen",
     "certificados": [
-      "Meta-Zertifikat – Einführung in die Front-End-Entwicklung",
-      "Meta-Zertifikat – Programmieren mit JavaScript",
-      "Meta-Zertifikat – React-Grundlagen",
-      "Meta-Zertifikat – Versionskontrolle",
-      "Meta-Zertifikat – Fortgeschrittenes React",
-      "UNLPAM-Zertifikat – Web-Layout mit HTML 5 und CSS",
-      "UNLPAM-Zertifikat – Fortgeschrittener JavaScript-Entwickler",
-      "UNLPAM-Zertifikat – Webprogrammierung mit PHP und MySQL"
+      {
+        "file": "Certificado Meta - Introduction to Front-End Development",
+        "label": "Meta-Zertifikat – Einführung in die Front-End-Entwicklung"
+      },
+      {
+        "file": "Certificado Meta - Programming with JavaScript",
+        "label": "Meta-Zertifikat – Programmieren mit JavaScript"
+      },
+      {
+        "file": "Certificado Meta - React Basics",
+        "label": "Meta-Zertifikat – React-Grundlagen"
+      },
+      {
+        "file": "Certificado Meta - Version Control",
+        "label": "Meta-Zertifikat – Versionskontrolle"
+      },
+      {
+        "file": "Certificado Meta - Advanced React",
+        "label": "Meta-Zertifikat – Fortgeschrittenes React"
+      },
+      {
+        "file": "Certificado UNLPAM - Maquetación web con HTML 5 y CSS",
+        "label": "UNLPAM-Zertifikat – Web-Layout mit HTML 5 und CSS"
+      },
+      {
+        "file": "Certificado UNLPAM - JavaScript Desarrollador Avanzado",
+        "label": "UNLPAM-Zertifikat – Fortgeschrittener JavaScript-Entwickler"
+      },
+      {
+        "file": "Certificado UNLPAM - Programación Web con PHP y MySQL",
+        "label": "UNLPAM-Zertifikat – Webprogrammierung mit PHP und MySQL"
+      }
     ]
   },
   "github": {

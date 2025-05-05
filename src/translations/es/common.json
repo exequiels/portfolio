@@ -21,6 +21,12 @@
     "contacto": "Hablemos",
     "contacto_formal": "Contacto"
   },
+  "languageSwitcher": {
+    "selecciona": "Selecciona Idioma",
+    "español": "Español",
+    "ingles": "Inglés",
+    "aleman": "Alemán"
+  },
   "intro": {
     "imagen": "Imagen de perfil en baja calidad",
     "imagen_formal": "Retrato profesional en proceso de actualización",
@@ -51,14 +57,38 @@
     "titulo": "Cursos",
     "titulo_formal": "Formación Académica y Profesional",
     "certificados": [
-      "Certificado Meta - Introduction to Front-End Development",
-      "Certificado Meta - Programming with JavaScript",
-      "Certificado Meta - React Basics",
-      "Certificado Meta - Version Control",
-      "Certificado Meta - Advanced React",
-      "Certificado UNLPAM - Maquetación web con HTML 5 y CSS",
-      "Certificado UNLPAM - JavaScript Desarrollador Avanzado",
-      "Certificado UNLPAM - Programación Web con PHP y MySQL"
+      {
+        "file": "Certificado Meta - Introduction to Front-End Development",
+        "label": "Certificado Meta - Introduction to Front-End Development"
+      },
+      {
+        "file": "Certificado Meta - Programming with JavaScript",
+        "label": "Certificado Meta - Programming with JavaScript"
+      },
+      {
+        "file": "Certificado Meta - React Basics",
+        "label": "Certificado Meta - React Basics"
+      },
+      {
+        "file": "Certificado Meta - Version Control",
+        "label": "Certificado Meta - Version Control"
+      },
+      {
+        "file": "Certificado Meta - Advanced React",
+        "label": "Certificado Meta - Advanced React"
+      },
+      {
+        "file": "Certificado UNLPAM - Maquetación web con HTML 5 y CSS",
+        "label": "Certificado UNLPAM - Maquetación web con HTML 5 y CSS"
+      },
+      {
+        "file": "Certificado UNLPAM - JavaScript Desarrollador Avanzado",
+        "label": "Certificado UNLPAM - JavaScript Desarrollador Avanzado"
+      },
+      {
+        "file": "Certificado UNLPAM - Programación Web con PHP y MySQL",
+        "label": "Certificado UNLPAM - Programación Web con PHP y MySQL"
+      }
     ]
   },
   "github": {
