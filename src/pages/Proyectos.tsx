@@ -33,7 +33,7 @@ const Proyectos = () => {
           {proyectosList.map((proyecto) => (
             <Card
               key={proyecto.id}
-              className="p-3 bg-white mb-3"
+              className="p-3 bg-proyectos mb-3"
               unstyled={estilos.sinEstilo}
             >
               <h3 className="mb-2">{proyecto.titulo}</h3>
@@ -48,14 +48,14 @@ const Proyectos = () => {
 
               {proyecto.links &&
                 (typeof proyecto.links === 'string' ? (
-                  <div className="flex justify-content-end">
+                  <div className="flex justify-content-end mt-2">
                     <a href={proyecto.links} target="_blank">
                       {proyecto.links}
                     </a>
                   </div>
                 ) : (
                   proyecto.links.map((link, index) => (
-                    <div key={index} className="flex justify-content-end">
+                    <div key={index} className="flex justify-content-end mt-2">
                       <a href={link.url} target="_blank">
                         {link.texto}
                       </a>

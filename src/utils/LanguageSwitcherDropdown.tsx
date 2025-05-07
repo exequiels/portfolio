@@ -47,7 +47,10 @@ const LanguageSwitcherDropdown = () => {
           className="mr-2"
           style={{ width: '20px' }}
         />
-        <div>{option.label}</div>
+        <div className="block md:hidden">
+          <i className="pi pi-language"></i>
+        </div>
+        <div className="hidden md:block">{option.label}</div>
       </div>
     )
   }

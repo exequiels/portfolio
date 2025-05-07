@@ -37,7 +37,7 @@ const Menu = () => {
       </Sidebar>
       <Button
         icon="pi pi-bars"
-        className="bg-primary"
+        className="hamburguesa"
         onClick={() => setVisible(true)}
       />
     </div>

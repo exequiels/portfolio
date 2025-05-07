@@ -10,6 +10,7 @@ const Header = () => {
   const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
   const isDefault = theme === 'default'
+  const isRedes = theme === 'redes'
 
   const menuList = [
     { id: 1, label: t('menu.inicio'), link: 'inicio' },
@@ -39,7 +40,7 @@ const Header = () => {
         </div>
         <div className={estilos.container}>
           {menuList.map((list) => (
-            <span key={list.id} className="mx-2">
+            <span key={list.id} className={`${isRedes ? 'mx-5' : 'mx-2'}`}>
               <a href={`#${list.link}`} className={estilos.link}>
                 {list.label}
               </a>
