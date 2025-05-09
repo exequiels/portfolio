@@ -27,14 +27,18 @@ const Footer = () => {
       pipi: 'pi-youtube',
       link: 'https://www.youtube.com/@ExequielsCodetoLife',
     },
-    { id: 2, pipi: 'pi-linkedin', link: '' },
-    { id: 3, pipi: 'pi-facebook', link: '' },
     {
-      id: 4,
-      pipi: 'pi-instagram',
+      id: 2,
+      pipi: 'pi-linkedin',
       link: 'https://www.linkedin.com/in/exequiel-sabatie/',
     },
-    { id: 5, pipi: 'pi-github', link: 'https://github.com/exequiels/' },
+    { id: 3, pipi: 'pi-github', link: 'https://github.com/exequiels/' },
+    { id: 4, pipi: 'pi-facebook', link: '#' },
+    {
+      id: 5,
+      pipi: 'pi-instagram',
+      link: '#',
+    },
   ]
 
   const menuList = getMenuList(t)
