@@ -23,18 +23,27 @@ const Menu = () => {
         onHide={() => setVisible(false)}
         position={theme === 'redes' ? 'right' : undefined}
         fullScreen={theme !== 'redes'}
+        className="bg-proyectos"
       >
         <div className="flex flex-column align-items-center">
           <h1 className="mb-3">Menu</h1>
           {menuList.map((item) => (
-            <div key={item.id} className="mb-3">
-              <a
-                href={`#${item.link}`}
-                className="mb-3 text-gray-500 hover:text-primary-500 font-bold no-underline"
-                onClick={handleMenuClick}
-              >
-                {item.label}
-              </a>
+            <div key={item.id} className="mb-2 w-full text-center">
+              {theme === 'redes' ? (
+                <Button
+                  onClick={() => (window.location.hash = item.link)}
+                  className="p-3 cursor-pointer p-button-raised bg-boton rd-focus w-full"
+                  label={item.label}
+                />
+              ) : (
+                <a
+                  href={`#${item.link}`}
+                  className="mb-3 text-gray-500 hover:text-primary-500 font-bold no-underline"
+                  onClick={handleMenuClick}
+                >
+                  {item.label}
+                </a>
+              )}
             </div>
           ))}
         </div>

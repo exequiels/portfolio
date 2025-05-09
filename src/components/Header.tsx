@@ -25,7 +25,7 @@ const Header = () => {
           title={t('menu.logo')}
         />
         <a href="https://sabatie.com.ar/" className={estilos.linkHome}>
-          {t('menu.sabatie')}
+          {theme === 'redes' ? 'SABATIE' : t('menu.sabatie')}
         </a>
       </div>
       {isDefault ? <LanguageSwitcher /> : <LanguageSwitcherDropdown />}

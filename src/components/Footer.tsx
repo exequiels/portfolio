@@ -76,7 +76,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="col-12 md:col-4 flex justify-content-center align-items-center gap-3">
+          <div className="col-12 md:col-4 flex justify-content-center align-items-center gap-3 mt-4 md:mt-0">
             {redesSociales.map((pi) => (
               <a href="#">
                 <i
@@ -90,7 +90,9 @@ const Footer = () => {
       )}
 
       <div
-        className={`text-center ${theme === 'redes' ? 'text-white' : 'mt-4'}`}
+        className={`text-center ${
+          theme === 'redes' ? 'text-white mt-3' : 'mt-4'
+        }`}
       >
         <p>© 2025 Exequiel Sabatie. All rights reserved.</p>
       </div>
