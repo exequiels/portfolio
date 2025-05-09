@@ -3,8 +3,10 @@ import { Sidebar } from 'primereact/sidebar'
 import { Button } from 'primereact/button'
 import { getMenuList } from '../utils/menuList'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { useTheme } from '../context/ThemeContext'
 
 const Menu = () => {
+  const { theme } = useTheme()
   const { t } = useLenguajeFormalTranslations('common')
   const [visible, setVisible] = useState<boolean>(false)
 
@@ -16,7 +18,12 @@ const Menu = () => {
 
   return (
     <div className="card flex justify-content-end">
-      <Sidebar visible={visible} onHide={() => setVisible(false)} fullScreen>
+      <Sidebar
+        visible={visible}
+        onHide={() => setVisible(false)}
+        position={theme === 'redes' ? 'right' : undefined}
+        fullScreen={theme !== 'redes'}
+      >
         <div className="flex flex-column align-items-center">
           <h1 className="mb-3">Menu</h1>
           {menuList.map((item) => (
