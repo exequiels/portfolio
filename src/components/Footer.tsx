@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
           <div className="col-12 md:col-4 flex justify-content-center align-items-center gap-3 mt-4 md:mt-0">
             {redesSociales.map((pi) => (
-              <a href={pi.link}>
+              <a href={pi.link} target="_blank">
                 <i
                   className={`pi ${pi.pipi}`}
                   style={{ fontSize: '1.5rem' }}
