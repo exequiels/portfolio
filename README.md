@@ -16,3 +16,10 @@ Default: https://sabatie.com.ar
 Formal: https://sabatie.com.ar?source=linkedin
 
 Social: https://sabatie.com.ar?source=facebook
+
+## License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+© 2025 Exequiel Sabatie. All rights reserved.  
+Commercial use, modification, and redistribution of this project are strictly prohibited without explicit permission.
