@@ -22,10 +22,19 @@ const Footer = () => {
   ]
 
   const redesSociales = [
-    { id: 1, pipi: 'pi-youtube' },
-    { id: 2, pipi: 'pi-linkedin' },
-    { id: 3, pipi: 'pi-facebook' },
-    { id: 4, pipi: 'pi-instagram' },
+    {
+      id: 1,
+      pipi: 'pi-youtube',
+      link: 'https://www.youtube.com/@ExequielsCodetoLife',
+    },
+    { id: 2, pipi: 'pi-linkedin', link: '' },
+    { id: 3, pipi: 'pi-facebook', link: '' },
+    {
+      id: 4,
+      pipi: 'pi-instagram',
+      link: 'https://www.linkedin.com/in/exequiel-sabatie/',
+    },
+    { id: 5, pipi: 'pi-github', link: 'https://github.com/exequiels/' },
   ]
 
   const menuList = getMenuList(t)
@@ -49,7 +58,7 @@ const Footer = () => {
       {theme === 'redes' && (
         <div className="flex justify-content-end text-white gap-3">
           {redesSociales.map((pi) => (
-            <a href="#">
+            <a href={pi.link}>
               <i className={`pi ${pi.pipi}`} style={{ fontSize: '1.5rem' }}></i>
             </a>
           ))}
@@ -78,7 +87,7 @@ const Footer = () => {
           </div>
           <div className="col-12 md:col-4 flex justify-content-center align-items-center gap-3 mt-4 md:mt-0">
             {redesSociales.map((pi) => (
-              <a href="#">
+              <a href={pi.link}>
                 <i
                   className={`pi ${pi.pipi}`}
                   style={{ fontSize: '1.5rem' }}
