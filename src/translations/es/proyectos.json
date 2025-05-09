@@ -3,6 +3,35 @@
   "proyectosLista": [
     {
       "id": "1",
+      "titulo": "Portfolio personal",
+      "descripcion": "Este portfolio es un proyecto en sí. Dependiendo desde dónde ingreses, el contexto adapta una propuesta distinta para cada usuario. Haz la prueba usando los enlaces que dejo más abajo y hacé clic en ellos para ver cómo funciona según el origen.",
+      "lista": [
+        "Contexto de idioma (Language context).",
+        "Contexto de tema visual (Theme context).",
+        "Adaptación del contenido según horarios del día.",
+        "PHP para formularios básicos.",
+        "Uso de las librerías PrimeReact, PrimeCSS, PrimeIcons."
+      ],
+      "seguimiento": "El proyecto evolucionó hacia una versión en React, TypeScript y AWS, donde participé como colaborador.",
+      "actualidad": "Siempre hay funcionalidades nuevas por agregar.",
+      "links": [
+        {
+          "url": "https://sabatie.com.ar/",
+          "texto": "Default desde URL"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=linkedin",
+          "texto": "Desde un sitio formal"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=facebook",
+          "texto": "Desde una red social"
+        }
+      ],
+      "imagen": "./images/portfolio.webp"
+    },
+    {
+      "id": "2",
       "titulo": "Gestión de Proyectos BIM y ACC",
       "descripcion": "Desarrollé un sistema web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, integre las APIs de Autodesk para optimizar la gestión de proyectos en BIM 360 y ACC. Este proyecto fue vendido a un grupo interno de Amazon en el área de construcciones.",
       "lista": [
@@ -18,7 +47,7 @@
       "imagen": "./images/project1.webp"
     },
     {
-      "id": "2",
+      "id": "3",
       "titulo": "Plataforma de Videojuegos Usados",
       "descripcion": "Desarrollé un sitio web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, enfocado en la compra y venta de videojuegos usados.",
       "lista": [
@@ -39,7 +68,7 @@
       "imagen": "./images/reusados.webp"
     },
     {
-      "id": "3",
+      "id": "4",
       "titulo": "Migración de WordPress",
       "descripcion": "Realicé la migración completa de dos sitios web en WordPress desde un hosting a otro, asegurando la transferencia de archivos, base de datos y correos electrónicos.",
       "lista": [
@@ -66,7 +95,7 @@
       "imagen": "./images/saintgermain.webp"
     },
     {
-      "id": "4",
+      "id": "5",
       "titulo": "Blog con Afiliados",
       "descripcion": "Un blog dedicado a compartir experiencias personales, con enlaces de afiliados y calculadoras útiles para bebés, todo desarrollado en React y utilizando PrimeReact. Un recurso para padres y futuros padres con contenido práctico y de valor.",
       "lista": [

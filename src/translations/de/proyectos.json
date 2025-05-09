@@ -2,7 +2,35 @@
   "titulo": "Projekte",
   "proyectosLista": [
     {
-      "id": "1",
+      "titulo": "Persönliches Portfolio",
+      "descripcion": "Dieses Portfolio ist ein eigenständiges Projekt. Je nachdem, von wo aus du darauf zugreifst, passt sich der Kontext an und bietet jedem Benutzer ein individuelles Erlebnis. Probiere es aus, indem du auf die untenstehenden Links klickst, um zu sehen, wie es sich je nach Quelle verhält.",
+      "lista": [
+        "Sprachkontext.",
+        "Design-/Themenkontext.",
+        "Inhaltsanpassung je nach Tageszeit.",
+        "PHP für einfache Formulare.",
+        "Verwendung der Bibliotheken PrimeReact, PrimeCSS und PrimeIcons."
+      ],
+      "seguimiento": "Das Projekt entwickelte sich zu einer Version mit React, TypeScript und AWS weiter, an der ich als Mitwirkender beteiligt war.",
+      "actualidad": "Es gibt immer etwas Neues hinzuzufügen.",
+      "links": [
+        {
+          "url": "https://sabatie.com.ar/",
+          "texto": "Standard über URL"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=linkedin",
+          "texto": "Von einer formellen Website"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=facebook",
+          "texto": "Von einem sozialen Netzwerk"
+        }
+      ],
+      "imagen": "./images/portfolio.webp"
+    },
+    {
+      "id": "2",
       "titulo": "BIM- und ACC-Projektmanagement",
       "descripcion": "Ich entwickelte ein Websystem mit PHP (ohne Frameworks), HTML, MySQL, CSS und Bootstrap. Ich integrierte die Autodesk-APIs, um das Projektmanagement in BIM 360 und ACC zu optimieren. Dieses Projekt wurde an ein internes Amazon-Team im Bauwesen verkauft.",
       "lista": [
@@ -18,7 +46,7 @@
       "imagen": "./images/project1.webp"
     },
     {
-      "id": "2",
+      "id": "3",
       "titulo": "Plattform für Gebrauchte Videospiele",
       "descripcion": "Ich entwickelte eine Website mit PHP (ohne Frameworks), HTML, MySQL, CSS und Bootstrap, die auf den Kauf und Verkauf von gebrauchten Videospielen ausgerichtet ist.",
       "lista": [
@@ -39,7 +67,7 @@
       "imagen": "./images/reusados.webp"
     },
     {
-      "id": "3",
+      "id": "4",
       "titulo": "WordPress-Migration",
       "descripcion": "Ich führte die vollständige Migration von zwei WordPress-Websites von einem Hosting-Anbieter zu einem anderen durch und stellte die Übertragung von Dateien, Datenbanken und E-Mail-Konten sicher.",
       "lista": [
@@ -66,7 +94,7 @@
       "imagen": "./images/saintgermain.webp"
     },
     {
-      "id": "4",
+      "id": "5",
       "titulo": "Affiliate-Blog",
       "descripcion": "Ein Blog, der persönliche Erfahrungen teilt, mit Affiliate-Links und nützlichen Baby-Rechnern. Entwickelt mit React und PrimeReact. Eine hilfreiche Ressource für Eltern und werdende Eltern mit praxisnahen Inhalten.",
       "lista": [
