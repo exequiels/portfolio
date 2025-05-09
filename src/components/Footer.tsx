@@ -62,7 +62,7 @@ const Footer = () => {
       {theme === 'redes' && (
         <div className="flex justify-content-end text-white gap-3">
           {redesSociales.map((pi) => (
-            <a href={pi.link}>
+            <a href={pi.link} target="_blank">
               <i className={`pi ${pi.pipi}`} style={{ fontSize: '1.5rem' }}></i>
             </a>
           ))}
