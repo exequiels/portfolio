@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Dropdown, DropdownChangeEvent } from 'primereact/dropdown'
 import { useTranslation } from 'react-i18next'
+import { useTheme } from '../context/ThemeContext'
 
 interface LanguageOption {
   label: string
@@ -9,6 +10,7 @@ interface LanguageOption {
 }
 
 const LanguageSwitcherDropdown = () => {
+  const { theme } = useTheme()
   const { i18n } = useTranslation()
   const { t } = useTranslation('common')
 
@@ -47,7 +49,10 @@ const LanguageSwitcherDropdown = () => {
           className="mr-2"
           style={{ width: '20px' }}
         />
-        <div>{option.label}</div>
+        <div className="block md:hidden">
+          <i className="pi pi-language"></i>
+        </div>
+        <div className="hidden md:block">{option.label}</div>
       </div>
     )
   }
@@ -62,7 +67,7 @@ const LanguageSwitcherDropdown = () => {
         placeholder={t('languageSwitcher.selecciona')}
         valueTemplate={renderOption}
         itemTemplate={renderOption}
-        className="md:w-14rem"
+        className={`md:w-14rem ${theme === 'redes' ? 'no-highlight' : ''}`}
       />
     </div>
   )

@@ -15,7 +15,7 @@ const defaultTheme: ThemeStyles = {
   linkHome: '',
   // Intro
   img: '',
-  queHago: 'text-6xl font-bold text-primary',
+  queHago: 'text-6xl font-bold queHago',
 }
 
 export default defaultTheme

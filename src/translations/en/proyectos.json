@@ -2,7 +2,35 @@
   "titulo": "Projects",
   "proyectosLista": [
     {
-      "id": "1",
+      "titulo": "Personal Portfolio",
+      "descripcion": "This portfolio is a project in itself. Depending on where you access it from, the context adapts the experience to offer a different proposal for each user. Try it out using the links below and click on them to see how it behaves based on the source.",
+      "lista": [
+        "Language context.",
+        "Theme context.",
+        "Content adapts depending on the time of day.",
+        "PHP for basic forms.",
+        "Use of PrimeReact, PrimeCSS, and PrimeIcons libraries."
+      ],
+      "seguimiento": "The project evolved into a version built with React, TypeScript, and AWS, where I participated as a collaborator.",
+      "actualidad": "There’s always something new to add.",
+      "links": [
+        {
+          "url": "https://sabatie.com.ar/",
+          "texto": "Default from URL"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=linkedin",
+          "texto": "From a formal website"
+        },
+        {
+          "url": "https://sabatie.com.ar/?source=facebook",
+          "texto": "From a social network"
+        }
+      ],
+      "imagen": "./images/portfolio.webp"
+    },
+    {
+      "id": "2",
       "titulo": "BIM and ACC Project Management",
       "descripcion": "I developed a web system using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap. I integrated Autodesk APIs to optimize project management in BIM 360 and ACC. This project was sold to an internal Amazon construction team.",
       "lista": [
@@ -14,10 +42,11 @@
       ],
       "seguimiento": "The project evolved into a version built with React, TypeScript, and AWS, where I contributed as a collaborator.",
       "actualidad": "I’m still working on this internal company project and can provide contact details of the current team in charge.",
-      "links": ""
+      "links": "",
+      "imagen": "./images/project1.webp"
     },
     {
-      "id": "2",
+      "id": "3",
       "titulo": "Used Video Game Platform",
       "descripcion": "I developed a website using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap, focused on the buying and selling of used video games.",
       "lista": [
@@ -34,10 +63,11 @@
       ],
       "seguimiento": "My idea was to create a place to share because I’m passionate about this, but no one else in my gamer community seemed interested, so I put it on hold for now.",
       "actualidad": "",
-      "links": "https://reusados.net"
+      "links": "https://reusados.net",
+      "imagen": "./images/reusados.webp"
     },
     {
-      "id": "3",
+      "id": "4",
       "titulo": "WordPress Migration",
       "descripcion": "I completed the full migration of two WordPress websites from one hosting provider to another, ensuring the transfer of files, database, and email accounts.",
       "lista": [
@@ -60,10 +90,11 @@
           "url": "https://sentimendoza.com.ar/",
           "texto": "https://sentimendoza.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/saintgermain.webp"
     },
     {
-      "id": "4",
+      "id": "5",
       "titulo": "Affiliate Blog",
       "descripcion": "A blog dedicated to sharing personal experiences, with affiliate links and useful baby-related calculators. Built in React and using PrimeReact. A resource for current and future parents offering practical and valuable content.",
       "lista": [
@@ -78,7 +109,8 @@
           "url": "https://parabebes.com.ar/",
           "texto": "https://parabebes.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/parabebes.webp"
     }
   ]
 }

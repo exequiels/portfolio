@@ -12,8 +12,8 @@
     "logo_formal": "Identidad visual en desarrollo",
     "inicio": "Inicio",
     "inicio_formal": "Inicio",
-    "historia": "Mi Historia",
-    "historia_formal": "Historia",
+    "historia": "Historia",
+    "historia_formal": "Trayectoria",
     "proyectos": "Proyectos",
     "proyectos_formal": "Portfolio de Proyectos",
     "cursos": "Cursos",
@@ -22,7 +22,7 @@
     "contacto_formal": "Contacto"
   },
   "languageSwitcher": {
-    "selecciona": "Idioma / Language / Sprache",
+    "selecciona": "LANG",
     "español": "Español",
     "ingles": "Inglés",
     "aleman": "Alemán"
