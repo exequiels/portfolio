@@ -129,6 +129,15 @@ a:hover {
   border-color: none !important;
 }
 
+.p-dropdown.no-highlight:hover,
+.p-dropdown.no-highlight.p-focus,
+.p-dropdown.no-highlight:focus,
+.p-dropdown.no-highlight:focus-within {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--color-primario) !important;
+  border-color: var(--color-primario) !important;
+}
+
 .bg-proyectos {
   background-color: var(--proyectos);
 }
