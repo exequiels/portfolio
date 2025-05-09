@@ -43,7 +43,7 @@ const Cursos = () => {
                 title=""
                 target="_blank"
               >
-                https://github.com/exequiels?tab=repositories
+                Github/exequiels
               </a>
               <p>{t('github.parrafo1')}</p>
             </li>
@@ -53,7 +53,7 @@ const Cursos = () => {
                 title=""
                 target="_blank"
               >
-                https://github.com/exequiels/wiki-extract
+                Wiki-extract
               </a>
               <p>{t('github.parrafo2')}</p>
             </li>

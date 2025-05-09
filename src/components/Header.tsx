@@ -4,20 +4,16 @@ import LanguageSwitcher from '../utils/LanguageSwitcher'
 import LanguageSwitcherDropdown from '../utils/LanguageSwitcherDropdown'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import Menu from './Menu'
+import { getMenuList } from '../utils/menuList'
 
 const Header = () => {
   const { theme } = useTheme()
   const estilos = themeStyles[theme]
   const { t } = useLenguajeFormalTranslations('common')
   const isDefault = theme === 'default'
+  const isRedes = theme === 'redes'
 
-  const menuList = [
-    { id: 1, label: t('menu.inicio'), link: 'inicio' },
-    { id: 2, label: t('menu.historia'), link: 'historia' },
-    { id: 3, label: t('menu.proyectos'), link: 'proyectos' },
-    { id: 4, label: t('menu.cursos'), link: 'cursos' },
-    { id: 5, label: t('menu.contacto'), link: 'contacto' },
-  ]
+  const menuList = getMenuList(t)
 
   return (
     <header className={estilos.headerContainer}>
@@ -29,7 +25,7 @@ const Header = () => {
           title={t('menu.logo')}
         />
         <a href="https://sabatie.com.ar/" className={estilos.linkHome}>
-          {t('menu.sabatie')}
+          {theme === 'redes' ? 'SABATIE' : t('menu.sabatie')}
         </a>
       </div>
       {isDefault ? <LanguageSwitcher /> : <LanguageSwitcherDropdown />}
@@ -39,7 +35,7 @@ const Header = () => {
         </div>
         <div className={estilos.container}>
           {menuList.map((list) => (
-            <span key={list.id} className="mx-2">
+            <span key={list.id} className={`${isRedes ? 'mx-5' : 'mx-2'}`}>
               <a href={`#${list.link}`} className={estilos.link}>
                 {list.label}
               </a>

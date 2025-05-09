@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I just wanted to create a portfolio and practice React at the same time.
 
-Currently, two official plugins are available:
+Three different languages, two tones (formal and informal), and three themes: one raw default style reminiscent of the early internet, another one tailored for job searching, and a third designed for social media.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm install`
+`npm run dev`
 
-## Expanding the ESLint configuration
+Or you can simply view it at https://www.sabatie.com.ar
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you want to see a specific theme:
 
-- Configure the top-level `parserOptions` property like this:
+Default: https://sabatie.com.ar
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Formal: https://sabatie.com.ar?source=linkedin
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Social: https://sabatie.com.ar?source=facebook
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## License
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+© 2025 Exequiel Sabatie. All rights reserved.  
+Commercial use, modification, and redistribution of this project are strictly prohibited without explicit permission.
