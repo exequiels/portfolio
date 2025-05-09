@@ -125,7 +125,7 @@ const Contacto = () => {
                     value={formData.nombre}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className={`w-full ${isRedes && 'rd-focus'}`}
                     unstyled={estilos.sinEstilo}
                   />
                 </div>
@@ -138,7 +138,7 @@ const Contacto = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className={`w-full ${isRedes && 'rd-focus'}`}
                     unstyled={estilos.sinEstilo}
                   />
                 </div>
@@ -151,7 +151,7 @@ const Contacto = () => {
                     value={formData.mensaje}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className={`w-full ${isRedes && 'rd-focus'}`}
                     unstyled={estilos.sinEstilo}
                   />
                 </div>
@@ -160,7 +160,7 @@ const Contacto = () => {
                   <Button
                     type="submit"
                     className={`p-3 mt-3 ${
-                      isRedes && 'bg-boton bg-green-50 p-button-raised rd-focus'
+                      isRedes && 'bg-boton p-button-raised rd-focus'
                     } ${isFormValid() ? 'cursor-pointer' : ''}`}
                     disabled={!isFormValid()}
                     label={t('contacto.botonEnviar')}

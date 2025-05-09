@@ -34,7 +34,7 @@ body.formal {
   --color: black;
   --font: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   --menu: #f1f0e8;
-  --footer: #282e38;
+  --footer: #f1f0e8;
   --queHago: #3b82f6;
   --proyectos: #f1f0e8;
 
@@ -55,7 +55,8 @@ body.redes {
   --menu: #c3dfa7;
   --footer: #282e38;
   --queHago: #a0c878;
-  --proyectos: #faf6e9;
+  --proyectos: #f4fcf7;
+  --bg-boton: #f4fcf7;
 
   --a-color: #fd8975;
   --a-hover: #fd8975;
@@ -107,15 +108,25 @@ a:hover {
 }
 
 .bg-boton {
-  background-color: var(--color-primario);
+  background-color: var(--bg-boton);
   color: var(--a-color);
   border-color: var(--color-primario);
   border-width: 1px;
 }
 
-.rd-focus {
+.p-inputtext.rd-focus:focus,
+.p-inputtext.rd-focus:hover {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--color-primario) !important;
+  border-color: var(--color-primario) !important;
+}
+
+.p-button.rd-focus:focus,
+.p-button.rd-focus:active,
+.p-button.rd-focus:hover {
   outline: none !important;
   box-shadow: none !important;
+  border-color: none !important;
 }
 
 .bg-proyectos {

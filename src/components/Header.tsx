@@ -4,6 +4,7 @@ import LanguageSwitcher from '../utils/LanguageSwitcher'
 import LanguageSwitcherDropdown from '../utils/LanguageSwitcherDropdown'
 import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 import Menu from './Menu'
+import { getMenuList } from '../utils/menuList'
 
 const Header = () => {
   const { theme } = useTheme()
@@ -12,13 +13,7 @@ const Header = () => {
   const isDefault = theme === 'default'
   const isRedes = theme === 'redes'
 
-  const menuList = [
-    { id: 1, label: t('menu.inicio'), link: 'inicio' },
-    { id: 2, label: t('menu.historia'), link: 'historia' },
-    { id: 3, label: t('menu.proyectos'), link: 'proyectos' },
-    { id: 4, label: t('menu.cursos'), link: 'cursos' },
-    { id: 5, label: t('menu.contacto'), link: 'contacto' },
-  ]
+  const menuList = getMenuList(t)
 
   return (
     <header className={estilos.headerContainer}>

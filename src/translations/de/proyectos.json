@@ -14,7 +14,8 @@
       ],
       "seguimiento": "Das Projekt wurde weiterentwickelt zu einer Version mit React, TypeScript und AWS, bei der ich als Mitwirkender beteiligt war.",
       "actualidad": "Ich arbeite weiterhin an diesem internen Projekt des Unternehmens und kann den Kontakt zur aktuellen verantwortlichen Gruppe bereitstellen.",
-      "links": ""
+      "links": "",
+      "imagen": "./images/project1.webp"
     },
     {
       "id": "2",
@@ -34,7 +35,8 @@
       ],
       "seguimiento": "Meine Idee war es, eine Community aufzubauen, da ich leidenschaftlich bei der Sache bin – aber leider zeigte niemand in meiner Gamer-Community Interesse, also liegt das Projekt derzeit auf Eis.",
       "actualidad": "",
-      "links": "https://reusados.net"
+      "links": "https://reusados.net",
+      "imagen": "./images/reusados.webp"
     },
     {
       "id": "3",
@@ -60,7 +62,8 @@
           "url": "https://sentimendoza.com.ar/",
           "texto": "https://sentimendoza.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/saintgermain.webp"
     },
     {
       "id": "4",
@@ -78,7 +81,8 @@
           "url": "https://parabebes.com.ar/",
           "texto": "https://parabebes.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/parabebes.webp"
     }
   ]
 }

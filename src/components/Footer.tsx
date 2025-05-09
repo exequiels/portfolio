@@ -1,8 +1,17 @@
 import { useTheme } from '../context/ThemeContext'
+import { getMenuList } from '../utils/menuList'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
+import { Proyecto } from './types/project'
 
 const Footer = () => {
   const { theme } = useTheme()
-  const isDefault = theme === 'default'
+  const { t } = useLenguajeFormalTranslations('common')
+  const { t: tProyectos } = useLenguajeFormalTranslations('proyectos')
+
+  const proyectosList: Proyecto[] =
+    (tProyectos('proyectosLista', {
+      returnObjects: true,
+    }) as unknown as Proyecto[]) || []
 
   const imageList = [
     { id: 1, imagen: 'frontpage_logo.gif' },
@@ -12,24 +21,77 @@ const Footer = () => {
     { id: 5, imagen: 'ygeo2.gif' },
   ]
 
+  const redesSociales = [
+    { id: 1, pipi: 'pi-youtube' },
+    { id: 2, pipi: 'pi-linkedin' },
+    { id: 3, pipi: 'pi-facebook' },
+    { id: 4, pipi: 'pi-instagram' },
+  ]
+
+  const menuList = getMenuList(t)
+
   return (
     <footer
-      className={`p-4 flex-column ${isDefault ? '' : 'bg-footer'}`}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontWeight: 'medium',
-      }}
+      className={`p-4 font-weight-medium ${
+        theme === 'default'
+          ? ''
+          : `bg-footer ${theme === 'formal' ? 'bg-formal' : ''}`
+      }`}
     >
-      {isDefault && (
-        <div className="mt-4">
+      {theme === 'default' && (
+        <div className="mt-4 text-center">
           {imageList.map((img) => (
             <img key={img.id} src={`./images/${img.imagen}`} className="ml-4" />
           ))}
         </div>
       )}
-      <div className={isDefault ? 'mt-4' : 'text-white'}>
+
+      {theme === 'redes' && (
+        <div className="flex justify-content-end text-white gap-3">
+          {redesSociales.map((pi) => (
+            <a href="#">
+              <i className={`pi ${pi.pipi}`} style={{ fontSize: '1.5rem' }}></i>
+            </a>
+          ))}
+        </div>
+      )}
+
+      {theme === 'formal' && (
+        <div className="text-primary mb-5 grid">
+          <div className="col-12 md:col-4 flex justify-content-start md:justify-content-center align-items-center">
+            <div className="text-left">
+              {menuList.map((list) => (
+                <p key={list.id}>
+                  <a href={`#${list.link}`}>{list.label}</a>
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="col-12 md:col-4 flex justify-content-start md:justify-content-center align-items-center">
+            <div className="text-left">
+              {proyectosList.map((proyecto) => (
+                <p key={proyecto.id}>
+                  <a href={`#${proyecto.id}`}>{proyecto.titulo}</a>
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="col-12 md:col-4 flex justify-content-center align-items-center gap-3">
+            {redesSociales.map((pi) => (
+              <a href="#">
+                <i
+                  className={`pi ${pi.pipi}`}
+                  style={{ fontSize: '1.5rem' }}
+                ></i>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div
+        className={`text-center ${theme === 'redes' ? 'text-white' : 'mt-4'}`}
+      >
         <p>© 2025 Exequiel Sabatie. All rights reserved.</p>
       </div>
     </footer>

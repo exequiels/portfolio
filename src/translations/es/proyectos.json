@@ -14,7 +14,8 @@
       ],
       "seguimiento": "El proyecto avanzo a una versión en React, TypeScript y AWS, donde participé como colaborador.",
       "actualidad": "Aún trabajo en este proyecto interno de la empresa y puedo proveer el contacto del grupo a cargo en la actualidad.",
-      "links": ""
+      "links": "",
+      "imagen": "./images/project1.webp"
     },
     {
       "id": "2",
@@ -34,7 +35,8 @@
       ],
       "seguimiento": "Mi idea era crear un lugar para compartir, ya que soy un apasionado, pero nadie más en mi comunidad gamer pareció entusiasmado y lo dejé en stand-by por ahora.",
       "actualidad": "",
-      "links": "https://reusados.net"
+      "links": "https://reusados.net",
+      "imagen": "./images/reusados.webp"
     },
     {
       "id": "3",
@@ -60,7 +62,8 @@
           "url": "https://sentimendoza.com.ar/",
           "texto": "https://sentimendoza.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/saintgermain.webp"
     },
     {
       "id": "4",
@@ -78,7 +81,8 @@
           "url": "https://parabebes.com.ar/",
           "texto": "https://parabebes.com.ar/"
         }
-      ]
+      ],
+      "imagen": "./images/parabebes.webp"
     }
   ]
 }

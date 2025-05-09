@@ -57,7 +57,7 @@ const Intro = () => {
                 <Button
                   onClick={() => (window.location.hash = 'historia')}
                   className={`p-3 my-2 cursor-pointer p-button-raised ${
-                    isRedes && 'bg-boton bg-green-50 rd-focus'
+                    isRedes && 'bg-boton rd-focus'
                   }`}
                   label={t('intro.botonMiHistoria')}
                   unstyled={estilos.sinEstilo}
@@ -68,7 +68,7 @@ const Intro = () => {
                   onClick={() => (window.location.hash = 'contacto')}
                   className={`p-3 m-2 cursor-pointer ${
                     isRedes
-                      ? 'p-button-raised bg-boton bg-green-50 rd-focus'
+                      ? 'p-button-raised bg-boton rd-focus'
                       : 'p-button-outlined'
                   }`}
                   label={t('intro.botonContacto')}

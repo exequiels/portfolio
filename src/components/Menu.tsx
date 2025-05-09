@@ -1,17 +1,14 @@
 import { useState } from 'react'
 import { Sidebar } from 'primereact/sidebar'
 import { Button } from 'primereact/button'
+import { getMenuList } from '../utils/menuList'
+import useLenguajeFormalTranslations from '../hooks/useLenguajeFormalTranslations'
 
 const Menu = () => {
+  const { t } = useLenguajeFormalTranslations('common')
   const [visible, setVisible] = useState<boolean>(false)
 
-  const menuItems = [
-    { label: 'Inicio', id: '#inicio' },
-    { label: 'Historia', id: '#historia' },
-    { label: 'Proyectos', id: '#proyectos' },
-    { label: 'Cursos', id: '#cursos,' },
-    { label: 'Contacto', id: '#contacto' },
-  ]
+  const menuList = getMenuList(t)
 
   const handleMenuClick = () => {
     setVisible(false)
@@ -22,10 +19,10 @@ const Menu = () => {
       <Sidebar visible={visible} onHide={() => setVisible(false)} fullScreen>
         <div className="flex flex-column align-items-center">
           <h1 className="mb-3">Menu</h1>
-          {menuItems.map((item) => (
+          {menuList.map((item) => (
             <div key={item.id} className="mb-3">
               <a
-                href={item.id}
+                href={`#${item.link}`}
                 className="mb-3 text-gray-500 hover:text-primary-500 font-bold no-underline"
                 onClick={handleMenuClick}
               >
