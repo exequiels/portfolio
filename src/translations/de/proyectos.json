@@ -11,7 +11,7 @@
         "PHP für einfache Formulare.",
         "Verwendung der Bibliotheken PrimeReact, PrimeCSS und PrimeIcons."
       ],
-      "seguimiento": "Das Projekt entwickelte sich zu einer Version mit React, TypeScript und AWS weiter, an der ich als Mitwirkender beteiligt war.",
+      "seguimiento": "Gerade erst angefangen.",
       "actualidad": "Es gibt immer etwas Neues hinzuzufügen.",
       "links": [
         {
@@ -61,8 +61,8 @@
         "Zugriffskontrolle auf verschiedene Bereiche der Website basierend auf Benutzerrollen.",
         "Responsives Design, das für Mobilgeräte optimiert ist."
       ],
-      "seguimiento": "Meine Idee war es, eine Community aufzubauen, da ich leidenschaftlich bei der Sache bin – aber leider zeigte niemand in meiner Gamer-Community Interesse, also liegt das Projekt derzeit auf Eis.",
-      "actualidad": "",
+      "seguimiento": "MercadoLibre hat die Anforderungen geändert und Endpunkte eingeschränkt.",
+      "actualidad": "Wartet.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },
