@@ -12,7 +12,7 @@
         "PHP para formularios básicos.",
         "Uso de las librerías PrimeReact, PrimeCSS, PrimeIcons."
       ],
-      "seguimiento": "El proyecto evolucionó hacia una versión en React, TypeScript y AWS, donde participé como colaborador.",
+      "seguimiento": "Recien comienza.",
       "actualidad": "Siempre hay funcionalidades nuevas por agregar.",
       "links": [
         {
@@ -62,8 +62,8 @@
         "Control de acceso a secciones del sitio basado en roles de usuario.",
         "Diseño responsivo y optimizado para dispositivos móviles."
       ],
-      "seguimiento": "Mi idea era crear un lugar para compartir, ya que soy un apasionado, pero nadie más en mi comunidad gamer pareció entusiasmado y lo dejé en stand-by por ahora.",
-      "actualidad": "",
+      "seguimiento": "Mercadolibre cambio los requerimientos y restringio endpoints.",
+      "actualidad": "Stand by.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },

@@ -13,6 +13,12 @@ const Header = () => {
   const isDefault = theme === 'default'
   const isRedes = theme === 'redes'
 
+  const searchParams = new URLSearchParams(window.location.search)
+  const sourceParam = searchParams.get('source')
+  const homeLink = sourceParam
+    ? `https://sabatie.com.ar/?source=${sourceParam}`
+    : 'https://sabatie.com.ar/'
+
   const menuList = getMenuList(t)
 
   return (
@@ -24,7 +30,7 @@ const Header = () => {
           style={estilos.logo || undefined}
           title={t('menu.logo')}
         />
-        <a href="https://sabatie.com.ar/" className={estilos.linkHome}>
+        <a href={homeLink} className={estilos.linkHome}>
           {theme === 'redes' ? 'SABATIE' : t('menu.sabatie')}
         </a>
       </div>

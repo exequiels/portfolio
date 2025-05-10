@@ -11,7 +11,7 @@
         "PHP for basic forms.",
         "Use of PrimeReact, PrimeCSS, and PrimeIcons libraries."
       ],
-      "seguimiento": "The project evolved into a version built with React, TypeScript, and AWS, where I participated as a collaborator.",
+      "seguimiento": "Just getting started.",
       "actualidad": "There’s always something new to add.",
       "links": [
         {
@@ -61,8 +61,8 @@
         "Access control to site sections based on user roles.",
         "Responsive design optimized for mobile devices."
       ],
-      "seguimiento": "My idea was to create a place to share because I’m passionate about this, but no one else in my gamer community seemed interested, so I put it on hold for now.",
-      "actualidad": "",
+      "seguimiento": "MercadoLibre changed the requirements and restricted endpoints.",
+      "actualidad": "On hold.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },
