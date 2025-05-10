@@ -36,13 +36,15 @@ const Menu = () => {
                   label={item.label}
                 />
               ) : (
-                <a
-                  href={`#${item.link}`}
-                  className="mb-3 text-gray-500 hover:text-primary-500 font-bold no-underline"
-                  onClick={handleMenuClick}
-                >
-                  {item.label}
-                </a>
+                <div className="border-bottom-1 mt-5 mb-5">
+                  <a
+                    href={`#${item.link}`}
+                    className="text-3xl"
+                    onClick={handleMenuClick}
+                  >
+                    {item.label}
+                  </a>
+                </div>
               )}
             </div>
           ))}
