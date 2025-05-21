@@ -33,11 +33,15 @@ const Footer = () => {
       link: 'https://www.linkedin.com/in/exequiel-sabatie/',
     },
     { id: 3, pipi: 'pi-github', link: 'https://github.com/exequiels/' },
-    { id: 4, pipi: 'pi-facebook', link: '#' },
+    {
+      id: 4,
+      pipi: 'pi-facebook',
+      link: 'https://www.facebook.com/sabatie.dev',
+    },
     {
       id: 5,
       pipi: 'pi-instagram',
-      link: '#',
+      link: 'https://www.instagram.com/sabatie.dev',
     },
   ]
 
