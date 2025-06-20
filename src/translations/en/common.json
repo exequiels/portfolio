@@ -47,11 +47,11 @@
   },
   "historia": {
     "titulo": "My Story",
-    "titulo_formal": "My Professional Background",
-    "parrafo1": "I'm Exe, a computer enthusiast since I was a kid. At 37, I decided to take a turn in my life. I overcame an illness, and after leaving the hospital, I stopped chasing material things. I chose to do what I love and let everything else follow as a result of my passion for living and learning.",
-    "parrafo1_formal": "My name is Exe. I have had a deep passion for computing since childhood. At the age of 37, following a significant health recovery, I chose to reevaluate my priorities and focus on what truly inspires me—technology and continuous learning.",
-    "parrafo2": "I quit my job and started working with computers—a tough decision since I don’t live alone, but with my partner, and already had my first child (now I have two). I've always dreamed of working in something tech-related, and I'm turning that dream into reality. This site is part of that journey—a place where I’ll be sharing what I learn, experimenting with new ideas, and growing.",
-    "parrafo2_formal": "Leaving my previous job to pursue a career in technology was a challenging yet rewarding decision, especially while supporting a family. I am now fulfilling a long-standing aspiration to work in the tech field. This website serves as a platform to document my learning journey, showcase innovative ideas, and demonstrate my professional growth."
+    "titulo_formal": "My Background",
+    "parrafo1": "I'm Exe, a computer enthusiast since I was a kid. At 37, I decided to turn my life around. I overcame an illness and, after leaving the hospital, I chose to stop chasing material things. I decided to focus on doing what I love and let everything else follow as a result of my passion for living and learning.",
+    "parrafo1_formal": "My name is Exequiel. Since an early age, I’ve felt a strong passion for computing. At 37, I made the decision to redirect my professional path after overcoming an illness that changed my outlook on life. From that moment on, I focused on dedicating myself to what truly inspires me, allowing professional growth to emerge naturally from that choice.",
+    "parrafo2": "I quit my job and started working with my computer — a difficult decision, especially because I don’t live alone: I’m in a relationship and already had my first child. I always dreamed of working with technology, and now I’m turning that dream into reality.",
+    "parrafo2_formal": "I made the difficult decision to resign from my previous job to pursue a career in the tech field, all within the context of an established family life. This website represents an important part of my professional development, where I share lessons, experiences, and projects that reflect my growth in the software development world."
   },
   "proyectos": {
     "titulo": "Projects",
