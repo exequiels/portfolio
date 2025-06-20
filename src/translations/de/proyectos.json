@@ -48,7 +48,7 @@
     {
       "id": "3",
       "titulo": "Plattform für Gebrauchte Videospiele",
-      "descripcion": "Ich entwickelte eine Website mit PHP (ohne Frameworks), HTML, MySQL, CSS und Bootstrap, die auf den Kauf und Verkauf von gebrauchten Videospielen ausgerichtet ist.",
+      "descripcion": "Nachdem ich meine erste App mit dem erlernten Wissen entwickelt hatte, erstellte ich diese App, um gebrauchte Artikel auf Second-Hand-Plattformen zu klassifizieren. Das half mir beim Kaufen, Verkaufen und dabei, ein zusätzliches Einkommen zu erzielen. Heute befindet sich meine Haupt-App noch in der Entwicklung und ich entwickle ständig neue Dinge.",
       "lista": [
         "Integration der MercadoLibre-APIs zur Anzeige der neuesten Informationen über gebrauchte Videospiele.",
         "Implementierung von MVC-Modellen zur modularen Strukturierung des Codes.",

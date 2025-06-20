@@ -49,7 +49,7 @@
     {
       "id": "3",
       "titulo": "Plataforma de Videojuegos Usados",
-      "descripcion": "Desarrollé un sitio web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, enfocado en la compra y venta de videojuegos usados.",
+      "descripcion": "Luego de desarrollar mi primera app con lo que había aprendido, hice esta app que me sirvió para clasificar artículos usados en plataformas de segunda mano, lo cual me ayudó a comprar, vender y generar un ingreso extra. Hoy en día, mi app principal sigue en desarrollo y continúo creando cosas nuevas constantemente.",
       "lista": [
         "Integración con las APIs de MercadoLibre para mostrar las últimas novedades en videojuegos usados.",
         "Implementación de modelos (MVC) para estructurar el código de forma modular.",

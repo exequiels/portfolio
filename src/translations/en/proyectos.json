@@ -48,7 +48,8 @@
     {
       "id": "3",
       "titulo": "Used Video Game Platform",
-      "descripcion": "I developed a website using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap, focused on the buying and selling of used video games.",
+      "descripcion": "After developing my first app with what I had learned, I created this one to help classify second-hand items from marketplace platforms, which helped me buy, sell, and earn some extra income. Today, my main app is still in development, and I keep building new things all the time.",
+
       "lista": [
         "Integration with MercadoLibre APIs to display the latest updates on used video games.",
         "Implementation of MVC models for modular code structure.",
