@@ -12,7 +12,7 @@
         "PHP para formularios básicos.",
         "Uso de las librerías PrimeReact, PrimeCSS, PrimeIcons."
       ],
-      "seguimiento": "Recien comienza.",
+      "seguimiento": "Recién comienza.",
       "actualidad": "Siempre hay funcionalidades nuevas por agregar.",
       "links": [
         {
@@ -33,7 +33,7 @@
     {
       "id": "2",
       "titulo": "Gestión de Proyectos BIM y ACC",
-      "descripcion": "Desarrollé un sistema web en PHP (sin frameworks), HTML, MySQL, CSS y Bootstrap, integre las APIs de Autodesk para optimizar la gestión de proyectos en BIM 360 y ACC. Este proyecto fue vendido a un grupo interno de Amazon en el área de construcciones.",
+      "descripcion": "Desarrollé un sistema web en PHP puro (sin frameworks) para optimizar flujos de trabajo en Autodesk BIM 360/ACC.",
       "lista": [
         "Autenticación de usuarios con control de sesiones.",
         "Visualización de proyectos y gestión de información clave.",
@@ -41,9 +41,14 @@
         "Creación y seguimiento de trouble tickets en BIM 360 y ACC.",
         "Seguimiento de usuarios para monitorear actividad e inactividad en Autodesk."
       ],
-      "seguimiento": "El proyecto avanzo a una versión en React, TypeScript y AWS, donde participé como colaborador.",
-      "actualidad": "Aún trabajo en este proyecto interno de la empresa y puedo proveer el contacto del grupo a cargo en la actualidad.",
-      "links": "",
+      "seguimiento": "Nuestro equipo vendió la solución a un grupo corporativo; participé en la migración a React/TypeScript/AWS como colaborador y actualmente mantengo y mejoro la versión en producción.",
+      "actualidad": "Aprendí a transformar críticas técnicas en crecimiento acelerado, mantener sistemas complejos en entornos empresariales y la importancia de arquitecturas limpias (aprendido en carne propia).",
+      "links": [
+        {
+          "url": "",
+          "texto": "No incluyo enlaces, solo a pedido y con permiso de sus dueños, los cuales no tendrán problema."
+        }
+      ],
       "imagen": "./images/project1.webp"
     },
     {
@@ -62,8 +67,8 @@
         "Control de acceso a secciones del sitio basado en roles de usuario.",
         "Diseño responsivo y optimizado para dispositivos móviles."
       ],
-      "seguimiento": "Mercadolibre cambio los requerimientos y restringio endpoints.",
-      "actualidad": "Stand by.",
+      "seguimiento": "MercadoLibre cambió los requerimientos y restringió endpoints, por lo cual la app quedó a la espera de que la reinvente.",
+      "actualidad": "Estado: Stand by.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },
@@ -76,7 +81,7 @@
         "Configuré el entorno en el nuevo hosting, asegurando compatibilidad con PHP y MySQL.",
         "Actualicé y ajusté la configuración del dominio y DNS.",
         "Recreé y configuré cuentas de correo en el nuevo hosting, asegurando su correcto funcionamiento.",
-        "Optimizé la carga del sitio y configuraciones del servidor.",
+        "Optimicé la carga del sitio y configuraciones del servidor.",
         "Verifiqué la funcionalidad del sitio y los plugins tras la migración.",
         "Implementé medidas de seguridad para proteger el sitio en su nueva ubicación."
       ],
@@ -84,12 +89,12 @@
       "actualidad": "",
       "links": [
         {
-          "url": "https://sgtours.com.ar/",
-          "texto": "https://sgtours.com.ar/"
+          "url": "",
+          "texto": ""
         },
         {
-          "url": "https://sentimendoza.com.ar/",
-          "texto": "https://sentimendoza.com.ar/"
+          "url": "",
+          "texto": "No incluyo enlaces, solo a pedido y con permiso de sus dueños, los cuales no tendrán problema."
         }
       ],
       "imagen": "./images/saintgermain.webp"
@@ -97,14 +102,14 @@
     {
       "id": "5",
       "titulo": "Blog con Afiliados",
-      "descripcion": "Un blog dedicado a compartir experiencias personales, con enlaces de afiliados y calculadoras útiles para bebés, todo desarrollado en React y utilizando PrimeReact. Un recurso para padres y futuros padres con contenido práctico y de valor.",
+      "descripcion": "Un blog dedicado a compartir experiencias personales, con enlaces de afiliados y calculadoras útiles para bebés. Después de crear la primera versión de mi portfolio quise continuar creando componentes y creé este sitio, pero le falta algo importante (tiempo y alma). Pronto lo actualizaré.",
       "lista": [
         "Experiencias personales en la crianza y cuidado de bebés.",
         "Enlaces de afiliados a productos recomendados.",
         "Herramientas útiles como calculadoras para el bienestar infantil."
       ],
       "seguimiento": "",
-      "actualidad": "",
+      "actualidad": "Estado: Stand by.",
       "links": [
         {
           "url": "https://parabebes.com.ar/",

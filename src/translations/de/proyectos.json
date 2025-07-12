@@ -2,25 +2,26 @@
   "titulo": "Projekte",
   "proyectosLista": [
     {
+      "id": "1",
       "titulo": "Persönliches Portfolio",
-      "descripcion": "Dieses Portfolio ist ein eigenständiges Projekt. Je nachdem, von wo aus du darauf zugreifst, passt sich der Kontext an und bietet jedem Benutzer ein individuelles Erlebnis. Probiere es aus, indem du auf die untenstehenden Links klickst, um zu sehen, wie es sich je nach Quelle verhält.",
+      "descripcion": "Dieses Portfolio ist ein Projekt für sich. Abhängig davon, von wo aus du darauf zugreifst, passt der Kontext einen anderen Vorschlag für jeden Benutzer an. Probiere die untenstehenden Links aus und klicke darauf, um zu sehen, wie es je nach Quelle funktioniert.",
       "lista": [
         "Sprachkontext.",
-        "Design-/Themenkontext.",
-        "Inhaltsanpassung je nach Tageszeit.",
+        "Themenkontext.",
+        "Anpassung des Inhalts je nach Tageszeit.",
         "PHP für einfache Formulare.",
-        "Verwendung der Bibliotheken PrimeReact, PrimeCSS und PrimeIcons."
+        "Verwendung der Bibliotheken PrimeReact, PrimeCSS, PrimeIcons."
       ],
-      "seguimiento": "Gerade erst angefangen.",
-      "actualidad": "Es gibt immer etwas Neues hinzuzufügen.",
+      "seguimiento": "Hat gerade erst begonnen.",
+      "actualidad": "Es gibt immer neue Funktionen hinzuzufügen.",
       "links": [
         {
           "url": "https://sabatie.com.ar/",
-          "texto": "Standard über URL"
+          "texto": "Standard von URL"
         },
         {
           "url": "https://sabatie.com.ar/?source=linkedin",
-          "texto": "Von einer formellen Website"
+          "texto": "Von einer formellen Seite"
         },
         {
           "url": "https://sabatie.com.ar/?source=facebook",
@@ -31,64 +32,69 @@
     },
     {
       "id": "2",
-      "titulo": "BIM- und ACC-Projektmanagement",
-      "descripcion": "Ich entwickelte ein Websystem mit PHP (ohne Frameworks), HTML, MySQL, CSS und Bootstrap. Ich integrierte die Autodesk-APIs, um das Projektmanagement in BIM 360 und ACC zu optimieren. Dieses Projekt wurde an ein internes Amazon-Team im Bauwesen verkauft.",
+      "titulo": "Projektmanagement BIM und ACC",
+      "descripcion": "Ich habe ein reines PHP-Websystem (ohne Frameworks) entwickelt, um Arbeitsabläufe in Autodesk BIM 360/ACC zu optimieren.",
       "lista": [
         "Benutzerauthentifizierung mit Sitzungssteuerung.",
         "Projektanzeige und Verwaltung wichtiger Informationen.",
-        "Verwaltung von Issues und Zugriffsberechtigungen für Projekte.",
-        "Erstellung und Nachverfolgung von Trouble Tickets in BIM 360 und ACC.",
-        "Benutzerüberwachung zur Kontrolle von Aktivität und Inaktivität bei Autodesk."
+        "Verwaltung von Issues und Berechtigungen für den Projektzugriff.",
+        "Erstellung und Verfolgung von Trouble Tickets in BIM 360 und ACC.",
+        "Benutzerüberwachung zur Kontrolle von Aktivität und Inaktivität in Autodesk."
       ],
-      "seguimiento": "Das Projekt wurde weiterentwickelt zu einer Version mit React, TypeScript und AWS, bei der ich als Mitwirkender beteiligt war.",
-      "actualidad": "Ich arbeite weiterhin an diesem internen Projekt des Unternehmens und kann den Kontakt zur aktuellen verantwortlichen Gruppe bereitstellen.",
-      "links": "",
+      "seguimiento": "Unser Team verkaufte die Lösung an eine Unternehmensgruppe; ich habe an der Migration zu React/TypeScript/AWS als Mitarbeiter teilgenommen und pflege und verbessere derzeit die Produktionsversion.",
+      "actualidad": "Ich habe gelernt, technische Kritik in schnelles Wachstum zu verwandeln, komplexe Systeme in Unternehmensumgebungen zu warten und die Bedeutung sauberer Architekturen zu schätzen (hart gelernt).",
+      "links": [
+        {
+          "url": "",
+          "texto": "Ich gebe Links nur auf Anfrage und mit Erlaubnis ihrer Eigentümer weiter, die damit kein Problem haben werden."
+        }
+      ],
       "imagen": "./images/project1.webp"
     },
     {
       "id": "3",
-      "titulo": "Plattform für Gebrauchte Videospiele",
-      "descripcion": "Nachdem ich meine erste App mit dem erlernten Wissen entwickelt hatte, erstellte ich diese App, um gebrauchte Artikel auf Second-Hand-Plattformen zu klassifizieren. Das half mir beim Kaufen, Verkaufen und dabei, ein zusätzliches Einkommen zu erzielen. Heute befindet sich meine Haupt-App noch in der Entwicklung und ich entwickle ständig neue Dinge.",
+      "titulo": "Plattform für gebrauchte Videospiele",
+      "descripcion": "Nachdem ich meine erste App mit dem Gelernten entwickelt hatte, erstellte ich diese App, um gebrauchte Artikel auf Second-Hand-Plattformen zu klassifizieren. So konnte ich kaufen, verkaufen und ein zusätzliches Einkommen generieren. Heute ist meine Haupt-App noch in Entwicklung, und ich entwickle ständig neue Ideen.",
       "lista": [
-        "Integration der MercadoLibre-APIs zur Anzeige der neuesten Informationen über gebrauchte Videospiele.",
-        "Implementierung von MVC-Modellen zur modularen Strukturierung des Codes.",
+        "Integration mit den APIs von MercadoLibre, um die neuesten Angebote für gebrauchte Videospiele anzuzeigen.",
+        "Implementierung von Modellen (MVC) zur modularen Strukturierung des Codes.",
         "Benutzerauthentifizierung und Rollenverwaltung.",
-        "Token-Erneuerung und -Abruf mittels Cron-Jobs.",
-        "Automatisierte Datenerfassung mit Cron-Jobs.",
-        "Optimierte Seitennummerierung für dynamisches Laden je nach aufgerufener Seite.",
-        "Administrationspanel zur Verwaltung von Anzeigen und Benutzern.",
-        "Zentralisiertes Fehlerprotokollsystem zur Erfassung und Anzeige aller Fehler an einem Ort.",
-        "Zugriffskontrolle auf verschiedene Bereiche der Website basierend auf Benutzerrollen.",
-        "Responsives Design, das für Mobilgeräte optimiert ist."
+        "Token-Erneuerung und -Abruf über Cronjobs.",
+        "Automatisierte Datenerfassung mit Cronjobs.",
+        "Optimierte Paginierung für das Laden dynamischer Inhalte je nach angeforderter Seite.",
+        "Administrationspanel zur Verwaltung von Beiträgen und Benutzern.",
+        "Zentralisiertes Fehlerprotokollsystem zur Aufzeichnung und Anzeige von Fehlern an einem Ort.",
+        "Zugriffskontrolle auf Website-Bereiche basierend auf Benutzerrollen.",
+        "Responsives Design optimiert für Mobilgeräte."
       ],
-      "seguimiento": "MercadoLibre hat die Anforderungen geändert und Endpunkte eingeschränkt.",
-      "actualidad": "Wartet.",
+      "seguimiento": "MercadoLibre hat die Anforderungen geändert und Endpunkte eingeschränkt, daher wartet die App auf eine Neuerfindung.",
+      "actualidad": "Status: Stand by.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },
     {
       "id": "4",
       "titulo": "WordPress-Migration",
-      "descripcion": "Ich führte die vollständige Migration von zwei WordPress-Websites von einem Hosting-Anbieter zu einem anderen durch und stellte die Übertragung von Dateien, Datenbanken und E-Mail-Konten sicher.",
+      "descripcion": "Ich habe die vollständige Migration von zwei WordPress-Websites von einem Hosting zum anderen durchgeführt und dabei die Übertragung von Dateien, Datenbanken und E-Mails sichergestellt.",
       "lista": [
-        "Sicherung und Wiederherstellung der MySQL-Datenbank und Website-Dateien.",
-        "Einrichtung der Umgebung beim neuen Hosting-Anbieter unter Beachtung der Kompatibilität mit PHP und MySQL.",
+        "Backup und Wiederherstellung der MySQL-Datenbank und der Website-Dateien.",
+        "Konfiguration der Umgebung auf dem neuen Hosting unter Sicherstellung der Kompatibilität mit PHP und MySQL.",
         "Aktualisierung und Anpassung der Domain- und DNS-Einstellungen.",
-        "Wiederherstellung und Konfiguration von E-Mail-Konten im neuen Hosting mit Funktionsprüfung.",
-        "Optimierung der Ladegeschwindigkeit und Servereinstellungen.",
-        "Funktionsprüfung der Website und Plugins nach der Migration.",
-        "Implementierung von Sicherheitsmaßnahmen zum Schutz der Website an ihrem neuen Standort."
+        "Erstellung und Konfiguration von E-Mail-Konten im neuen Hosting mit funktionierender Einrichtung.",
+        "Optimierung der Ladezeiten der Website und der Servereinstellungen.",
+        "Überprüfung der Funktionalität der Website und der Plugins nach der Migration.",
+        "Implementierung von Sicherheitsmaßnahmen zum Schutz der Website am neuen Standort."
       ],
       "seguimiento": "",
       "actualidad": "",
       "links": [
         {
-          "url": "https://sgtours.com.ar/",
-          "texto": "https://sgtours.com.ar/"
+          "url": "",
+          "texto": ""
         },
         {
-          "url": "https://sentimendoza.com.ar/",
-          "texto": "https://sentimendoza.com.ar/"
+          "url": "",
+          "texto": "Ich gebe Links nur auf Anfrage und mit Erlaubnis ihrer Eigentümer weiter, die damit kein Problem haben werden."
         }
       ],
       "imagen": "./images/saintgermain.webp"
@@ -96,14 +102,14 @@
     {
       "id": "5",
       "titulo": "Affiliate-Blog",
-      "descripcion": "Ein Blog, der persönliche Erfahrungen teilt, mit Affiliate-Links und nützlichen Baby-Rechnern. Entwickelt mit React und PrimeReact. Eine hilfreiche Ressource für Eltern und werdende Eltern mit praxisnahen Inhalten.",
+      "descripcion": "Ein Blog, der persönliche Erfahrungen teilt, mit Affiliate-Links und nützlichen Rechnern für Babys. Nachdem ich die erste Version meines Portfolios erstellt hatte, wollte ich weitere Komponenten entwickeln und habe diese Seite gebaut. Es fehlt aber noch etwas Wichtiges (Zeit und Herz). Ich werde sie bald aktualisieren.",
       "lista": [
-        "Persönliche Erfahrungen rund um die Kindererziehung.",
+        "Persönliche Erfahrungen in der Kindererziehung und -pflege.",
         "Affiliate-Links zu empfohlenen Produkten.",
         "Nützliche Tools wie Rechner für das Wohlbefinden von Kindern."
       ],
       "seguimiento": "",
-      "actualidad": "",
+      "actualidad": "Status: Stand by.",
       "links": [
         {
           "url": "https://parabebes.com.ar/",

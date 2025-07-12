@@ -2,17 +2,18 @@
   "titulo": "Projects",
   "proyectosLista": [
     {
+      "id": "1",
       "titulo": "Personal Portfolio",
-      "descripcion": "This portfolio is a project in itself. Depending on where you access it from, the context adapts the experience to offer a different proposal for each user. Try it out using the links below and click on them to see how it behaves based on the source.",
+      "descripcion": "This portfolio is a project in itself. Depending on where you enter from, the context adapts a different proposal for each user. Try using the links I leave below and click on them to see how it works according to the source.",
       "lista": [
         "Language context.",
         "Theme context.",
-        "Content adapts depending on the time of day.",
+        "Content adaptation according to time of day.",
         "PHP for basic forms.",
-        "Use of PrimeReact, PrimeCSS, and PrimeIcons libraries."
+        "Use of PrimeReact, PrimeCSS, PrimeIcons libraries."
       ],
       "seguimiento": "Just getting started.",
-      "actualidad": "There’s always something new to add.",
+      "actualidad": "There are always new features to add.",
       "links": [
         {
           "url": "https://sabatie.com.ar/",
@@ -20,7 +21,7 @@
         },
         {
           "url": "https://sabatie.com.ar/?source=linkedin",
-          "texto": "From a formal website"
+          "texto": "From a formal site"
         },
         {
           "url": "https://sabatie.com.ar/?source=facebook",
@@ -32,7 +33,7 @@
     {
       "id": "2",
       "titulo": "BIM and ACC Project Management",
-      "descripcion": "I developed a web system using PHP (without frameworks), HTML, MySQL, CSS, and Bootstrap. I integrated Autodesk APIs to optimize project management in BIM 360 and ACC. This project was sold to an internal Amazon construction team.",
+      "descripcion": "I developed a pure PHP web system (without frameworks) to optimize workflows in Autodesk BIM 360/ACC.",
       "lista": [
         "User authentication with session control.",
         "Project visualization and key information management.",
@@ -40,56 +41,60 @@
         "Creation and tracking of trouble tickets in BIM 360 and ACC.",
         "User tracking to monitor activity and inactivity in Autodesk."
       ],
-      "seguimiento": "The project evolved into a version built with React, TypeScript, and AWS, where I contributed as a collaborator.",
-      "actualidad": "I’m still working on this internal company project and can provide contact details of the current team in charge.",
-      "links": "",
+      "seguimiento": "Our team sold the solution to a corporate group; I participated in the migration to React/TypeScript/AWS as a collaborator and currently maintain and improve the production version.",
+      "actualidad": "I learned to turn technical criticism into rapid growth, to maintain complex systems in enterprise environments, and the importance of clean architectures (learned the hard way).",
+      "links": [
+        {
+          "url": "",
+          "texto": "I do not include links, only on request and with permission from their owners, who will have no problem."
+        }
+      ],
       "imagen": "./images/project1.webp"
     },
     {
       "id": "3",
-      "titulo": "Used Video Game Platform",
-      "descripcion": "After developing my first app with what I had learned, I created this one to help classify second-hand items from marketplace platforms, which helped me buy, sell, and earn some extra income. Today, my main app is still in development, and I keep building new things all the time.",
-
+      "titulo": "Used Video Games Platform",
+      "descripcion": "After developing my first app with what I had learned, I created this app that helped me classify used items on second-hand platforms, which allowed me to buy, sell, and generate extra income. Today, my main app is still in development, and I continue to create new things constantly.",
       "lista": [
-        "Integration with MercadoLibre APIs to display the latest updates on used video games.",
-        "Implementation of MVC models for modular code structure.",
+        "Integration with MercadoLibre APIs to show the latest news on used video games.",
+        "Implementation of models (MVC) to structure the code in a modular way.",
         "User authentication and role-based management.",
-        "Token renewal and retrieval using cron jobs.",
-        "Automated data extraction via cron jobs.",
-        "Optimized pagination to load dynamic content based on requested pages.",
-        "Admin panel to manage listings and users.",
-        "Centralized error logging system to register and display errors in one place.",
+        "Token renewal and retrieval via cron jobs.",
+        "Automated data extraction with cron jobs.",
+        "Optimized pagination to load dynamic content based on the requested page.",
+        "Administration panel to manage posts and users.",
+        "Centralized error logging system, recording and displaying errors in one place.",
         "Access control to site sections based on user roles.",
         "Responsive design optimized for mobile devices."
       ],
-      "seguimiento": "MercadoLibre changed the requirements and restricted endpoints.",
-      "actualidad": "On hold.",
+      "seguimiento": "MercadoLibre changed requirements and restricted endpoints, so the app is waiting for a redesign.",
+      "actualidad": "Status: Stand by.",
       "links": "https://reusados.net",
       "imagen": "./images/reusados.webp"
     },
     {
       "id": "4",
       "titulo": "WordPress Migration",
-      "descripcion": "I completed the full migration of two WordPress websites from one hosting provider to another, ensuring the transfer of files, database, and email accounts.",
+      "descripcion": "I performed the complete migration of two WordPress websites from one hosting to another, ensuring the transfer of files, databases, and emails.",
       "lista": [
         "Backed up and restored the MySQL database and site files.",
-        "Set up the environment on the new hosting, ensuring PHP and MySQL compatibility.",
-        "Updated and adjusted domain and DNS settings.",
-        "Recreated and configured email accounts on the new hosting, ensuring proper operation.",
-        "Optimized site loading and server settings.",
-        "Verified site and plugin functionality after migration.",
+        "Configured the environment on the new hosting, ensuring compatibility with PHP and MySQL.",
+        "Updated and adjusted the domain and DNS configuration.",
+        "Recreated and configured email accounts on the new hosting, ensuring correct operation.",
+        "Optimized site load and server settings.",
+        "Verified the functionality of the site and plugins after the migration.",
         "Implemented security measures to protect the site in its new location."
       ],
       "seguimiento": "",
       "actualidad": "",
       "links": [
         {
-          "url": "https://sgtours.com.ar/",
-          "texto": "https://sgtours.com.ar/"
+          "url": "",
+          "texto": ""
         },
         {
-          "url": "https://sentimendoza.com.ar/",
-          "texto": "https://sentimendoza.com.ar/"
+          "url": "",
+          "texto": "I do not include links, only on request and with permission from their owners, who will have no problem."
         }
       ],
       "imagen": "./images/saintgermain.webp"
@@ -97,14 +102,14 @@
     {
       "id": "5",
       "titulo": "Affiliate Blog",
-      "descripcion": "A blog dedicated to sharing personal experiences, with affiliate links and useful baby-related calculators. Built in React and using PrimeReact. A resource for current and future parents offering practical and valuable content.",
+      "descripcion": "A blog dedicated to sharing personal experiences, with affiliate links and useful calculators for babies. After creating the first version of my portfolio, I wanted to continue creating components and built this site, but it is missing something important (time and soul). I will update it soon.",
       "lista": [
-        "Personal experiences in baby care and parenting.",
+        "Personal experiences in raising and caring for babies.",
         "Affiliate links to recommended products.",
-        "Useful tools like calculators for child well-being."
+        "Useful tools such as calculators for child well-being."
       ],
       "seguimiento": "",
-      "actualidad": "",
+      "actualidad": "Status: Stand by.",
       "links": [
         {
           "url": "https://parabebes.com.ar/",
