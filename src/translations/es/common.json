@@ -36,10 +36,10 @@
       "buenas_tardes": "Buenas tardes, mi nombre es",
       "buenas_noches": "Buenas noches, mi nombre es"
     },
-    "frase": "Construyo cosas para la web.",
-    "frase_formal": "Desarrollo soluciones digitales para entornos web.",
+    "frase": "Decidí seguir mi propio camino: hoy construyo cosas que me apasionan y busco lugares que valoren eso.",
+    "frase_formal": "Elegí un camino profesional guiado por la pasión y la autenticidad, y busco formar parte de entornos donde la creatividad y las ideas no convencionales sean bienvenidas.",
     "descripcion": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",
-    "descripcion_formal": "Soy un profesional del desarrollo de software con residencia en San Juan, Argentina.",
+    "descripcion_formal": "Soy un desarrollador en construcción, actualmente residiendo en San Juan - Argentina.",
     "botonMiHistoria": "Mi Historia",
     "botonMiHistoria_formal": "Trayectoria Profesional",
     "botonContacto": "Contacto",
@@ -48,9 +48,9 @@
   "historia": {
     "titulo": "Mi Historia",
     "titulo_formal": "Mi Trayectoria",
-    "parrafo1": "Soy Exe, un amante de las computadoras desde muy chico. A los 37 años decidí darle un giro a mi vida. Superé una enfermedad y al salir del hospital abandone la búsqueda insistente de lo material. Pensé en hacer cosas que me gusten y dejar que lo demás sea consecuencia de mi pasión por vivir y aprender.",
+    "parrafo1": "Soy Exe, un amante de las computadoras desde muy chico. A los 37 años, decidí darle un giro a mi vida. Superé una enfermedad y, al salir del hospital, decidí abandonar la búsqueda insistente de lo material. Pensé en hacer cosas que me gusten y dejar que lo demás sea consecuencia de mi pasión por vivir y aprender.",
     "parrafo1_formal": "Mi nombre es Exequiel. Desde temprana edad he sentido una gran pasión por la informática. A los 37 años tomé la decisión de redirigir mi vida profesional, tras superar una enfermedad que transformó mi forma de ver el mundo. A partir de entonces, me enfoqué en dedicarme a lo que realmente me apasiona, permitiendo que el crecimiento profesional surja como consecuencia natural de esa elección.",
-    "parrafo2": "Renuncié a mi trabajo y me puse a trabajar con la computadora, una decisión difícil dado que no vivo solo, sino en pareja y ya tenía a mi primer hijo (ahora tengo dos). Siempre soñé con trabajar en algo relacionado con la tecnología, y estoy convirtiendo ese sueño en realidad. Este sitio es parte de mi viaje, un espacio donde voy a estar compartiendo lo que aprendo, experimentando con nuevas ideas y creciendo.",
+    "parrafo2": "Renuncié a mi trabajo y me puse a trabajar con la computadora, una decisión difícil, dado que no vivo solo, sino en pareja, y ya tenía a mi primer hijo. Siempre soñé con trabajar en algo relacionado con la tecnología, y ahora estoy convirtiendo ese sueño en realidad.",
     "parrafo2_formal": "Tomé la difícil decisión de renunciar a mi empleo anterior para dedicarme profesionalmente al ámbito tecnológico, en el contexto de una vida familiar consolidada. Este sitio representa una parte importante de mi desarrollo profesional, donde comparto aprendizajes, experiencias y proyectos que reflejan mi evolución en el mundo del desarrollo de software."
   },
   "proyectos": {
