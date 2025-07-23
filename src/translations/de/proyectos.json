@@ -117,6 +117,28 @@
         }
       ],
       "imagen": "./images/parabebes.webp"
+    },
+    {
+      "id": "6",
+      "titulo": "Virtuelle Karten ohne Registrierung",
+      "descripcion": "Ein Generator mit der Möglichkeit, Vorlagen zu bearbeiten oder von Grund auf neu zu erstellen, einen Link zu generieren und ohne Registrierung zu teilen. Nur wenige Klicks und die Karte ist fertig.",
+      "lista": [
+        "Entwickelt mit React + Vite für hohe Leistung.",
+        "Verwendung von PrimeReact und PrimeCSS für Oberfläche und Styling.",
+        "Internationalisierung mit react-i18next für mehrere Sprachen.",
+        "Zustandsverwaltung mit Context API.",
+        "Link-Generierung und Backend mit Laravel (PHP).",
+        "Animate.CSS für Textanimationen."
+      ],
+      "seguimiento": "Gerade erst angefangen.",
+      "actualidad": "",
+      "links": [
+        {
+          "url": "https://tarjetagratis.com/",
+          "texto": "https://tarjetagratis.com/"
+        }
+      ],
+      "imagen": "./images/tarjetagratis.png"
     }
   ]
 }

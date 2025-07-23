@@ -117,6 +117,28 @@
         }
       ],
       "imagen": "./images/parabebes.webp"
+    },
+    {
+      "id": "6",
+      "titulo": "Tarjetas Virtuales sin Registro",
+      "descripcion": "Un generador con la capacidad de editar plantillas o crearlas desde cero, generar un enlace y enviarlas sin necesidad de registrarse. Solo unos pocos clics y la tarjeta está lista.",
+      "lista": [
+        "Desarrollado con React + Vite para un rendimiento rápido.",
+        "Uso de PrimeReact y PrimeCSS para la interfaz y estilos.",
+        "Internacionalización con react-i18next para múltiples idiomas.",
+        "Gestión de estado con Context API.",
+        "Generación de enlaces y backend en Laravel (PHP).",
+        "Animate.CSS para animaciones de texto."
+      ],
+      "seguimiento": "Recién comienza.",
+      "actualidad": "",
+      "links": [
+        {
+          "url": "https://tarjetagratis.com/",
+          "texto": "https://tarjetagratis.com/"
+        }
+      ],
+      "imagen": "./images/tarjetagratis.png"
     }
   ]
 }

@@ -117,6 +117,28 @@
         }
       ],
       "imagen": "./images/parabebes.webp"
+    },
+    {
+      "id": "6",
+      "titulo": "Virtual Cards without Registration",
+      "descripcion": "A generator with the ability to edit templates or create them from scratch, generate a link, and share without the need to register. Just a few clicks and your card is ready.",
+      "lista": [
+        "Built with React + Vite for fast performance.",
+        "Using PrimeReact and PrimeCSS for UI and styling.",
+        "Internationalization with react-i18next for multiple languages.",
+        "State management with Context API.",
+        "Link generation and backend powered by Laravel (PHP).",
+        "Animate.CSS for text animations."
+      ],
+      "seguimiento": "Just getting started.",
+      "actualidad": "",
+      "links": [
+        {
+          "url": "https://tarjetagratis.com/",
+          "texto": "https://tarjetagratis.com/"
+        }
+      ],
+      "imagen": "./images/tarjetagratis.png"
     }
   ]
 }
